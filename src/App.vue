@@ -3,11 +3,12 @@
 import Membresia from './components/Membresia.vue'
 
 export default{
-   
+  
     components: {
       
       Membresia
-}
+    }
+
 }
 </script>
 
@@ -23,5 +24,7 @@ export default{
 </template>
 
 <style >
+
+
 
 </style>
