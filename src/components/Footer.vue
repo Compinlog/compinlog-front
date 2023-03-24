@@ -25,12 +25,18 @@
                     <p>Lead Generate</p>
                     <p>Remote Colaboration</p>
                 </div>
-                <div class="seccionDer">
+                <div>
                     <p class="tituloCompinlog"><img src="@/assets/logoCompinlog.png" width="70px" height="70px"><strong>Compinlog</strong></p>
                     <p class="titulo"><strong>Contact Us</strong></p>
                     <p><input class="input" type="text"><button class="btn">Get Started</button></p>
-                    <p></p>
-                </div> 
+                </div>
+                <hr><div class="redes">Copyright @2022</div> 
+                    <div>
+                    <a class="redes" href="facebook.com"><img src="@/assets/face.png" width="50px" height="30px"></a>
+                    <a class="redes"  href="facebook.com"><img src="@/assets/twit.png" width="30px" height="30px"></a>
+                    <a class="redes"  href="facebook.com"><img src="@/assets/insta.png" width="30px" height="30px"></a>
+                    <a class="redes"  href="facebook.com"><img src="@/assets/link.png" width="30px" height="30px"></a></div>
+                    <div><hr></div>
             
         </footer>
     </div>
@@ -49,6 +55,21 @@ p{
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+hr{
+    width: 720px;
+    height: 2px;
+    background: white;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.redes{
+    color: white;
+    margin-right: 15px;
+}
+
 .footer
 {
     display: grid;
@@ -57,7 +78,7 @@ p{
     height: 40%;
     width: 100%;
     position: fixed;
-    margin-top: 35%;
+    margin-top:32%;
 }
 
 .titulo{
