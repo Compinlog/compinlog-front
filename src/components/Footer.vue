@@ -2,23 +2,23 @@
     <div>
         <footer class="footer">
             
-                <div>
-                    <p class="titulo"><strong>Company</strong></p>
-                    <p>About Us</p>
-                    <p>Why Choose Us</p>
-                    <p>Princing</p>
-                    <p>Testimonial</p>
+                <div class="divCenter">
+                    <p class="nameColumLeft"><strong>Company</strong></p>
+                    <p class="nameColum1">About Us</p>
+                    <p class="nameColum1">Why Choose Us</p>
+                    <p class="nameColum1">Princing</p>
+                    <p class="nameColum1">Testimonial</p>
                     
                 </div>
                 <div>
-                    <p class="titulo"><Strong>Resources</Strong></p>
+                    <p class="nameColum"><Strong>Resources</Strong></p>
                     <p>Privacy Policy</p>
                     <p>Terms and Conditions</p>
                     <p>Blog</p>
                     <p>Contact Us</p>
                 </div>
                 <div>
-                    <p class="titulo"><strong>Products</strong></p>
+                    <p class="nameColum"><strong>Products</strong></p>
                     <p>Project Managment</p>
                     <p>Time Tacker</p>
                     <p>Time Schedule</p>
@@ -26,17 +26,17 @@
                     <p>Remote Colaboration</p>
                 </div>
                 <div>
-                    <p class="tituloCompinlog"><img src="@/assets/logoCompinlog.png" width="70px" height="70px"><strong>Compinlog</strong></p>
-                    <p class="titulo"><strong>Contact Us</strong></p>
+                    <p class="nameColumCompinlog"><img src="@/assets/logoCompinlog.png" width="70px" height="70px"><strong>Compinlog</strong></p>
+                    <p class="nameColum"><strong>Contact Us</strong></p>
                     <p><input class="input" type="text"><button class="btn">Get Started</button></p>
                 </div>
-                <hr><div class="redes">Copyright @2022</div> 
+                <hr><div class="social">Copyright @2022</div> 
                     <div>
-                    <a class="redes" href="facebook.com"><img src="@/assets/face.png" width="50px" height="30px"></a>
-                    <a class="redes"  href="facebook.com"><img src="@/assets/twit.png" width="30px" height="30px"></a>
-                    <a class="redes"  href="facebook.com"><img src="@/assets/insta.png" width="30px" height="30px"></a>
-                    <a class="redes"  href="facebook.com"><img src="@/assets/link.png" width="30px" height="30px"></a></div>
-                    <div><hr></div>
+                    <a class="social" href="facebook.com"><img src="@/assets/face.png" width="50px" height="30px"></a>
+                    <a class="social"  href="facebook.com"><img src="@/assets/twit.png" width="30px" height="30px"></a>
+                    <a class="social"  href="facebook.com"><img src="@/assets/insta.png" width="30px" height="30px"></a>
+                    <a class="social"  href="facebook.com"><img src="@/assets/link.png" width="30px" height="30px"></a></div>
+                    <div><hr class="hrRigth"></div>
             
         </footer>
     </div>
@@ -48,6 +48,25 @@
 
 <style scoped>
 
+.nameColum1{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nameColumLeft{
+    
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hrRigth{
+    width: 720px;
+}
+
 p{
     color: rgb(194, 194, 194);
     
@@ -56,7 +75,7 @@ p{
 }
 
 hr{
-    width: 720px;
+    width: 520px;
     height: 2px;
     background: white;
     display: grid;
@@ -65,7 +84,7 @@ hr{
     margin-right: 15px;
 }
 
-.redes{
+.social{
     color: white;
     margin-right: 15px;
 }
@@ -81,11 +100,11 @@ hr{
     margin-top:32%;
 }
 
-.titulo{
+.nameColum{
     color: white;
 }
 
-.tituloCompinlog{
+.nameColumCompinlog{
     color: white;
     font-size: 300%;
     margin-bottom: 0%;
