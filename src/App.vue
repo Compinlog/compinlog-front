@@ -1,17 +1,21 @@
 <script>
-export default {
-    components: {
+import NewComponent from './components/NewComponent.vue'
 
-}
+export default {
+  components: {
+    NewComponent
+  }
 }
 </script>
 
 <template>
-<div>
-
-</div>
+  <div>
+    <NewComponent />
+  </div>
 </template>
 
-<style scoped>
-
+<style>
+body {
+  background: #222222;
+}
 </style>
