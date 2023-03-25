@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-prod">Cambios nuevos en produccion</h1>
+    <h1 class="text-prod">Cambios nuevos en produccion 2</h1>
   </div>
 </template>
 
