@@ -3,20 +3,20 @@
 <template>
     <div class="container">
         <div class="card">
-                <center><img src="src\assets\lista-de-deseos.png"></center>
+                <center><img src="../assets/lista-de-deseos.png"></center>
                 <h1><b style="font-weigth:500" >COMPRAS</b><br><br></h1>
                 <p>Evaluamos ofertas con cuadros comparativos entre ellas.<br><br>Negociamos precios y <br>marcas. </p>
                 
         </div>    
 
         <div class="card">
-                <center><img src="src\assets\logistica (2).png"></center>
+                <center><img src="../assets/logistica.png"></center>
                 <h1><b style="font-weigth:500">INVENTARIO</b><br><br></h1>
                 <p>Sistema de control de <br> inventario de materiales o mercancía. <br> <br>Software de administración y control de inventarios.</p>      
         </div>
- 
+
         <div class="card">
-                <center><img src="src\assets\envio-internacional (1).png"></center>
+                <center><img src="../assets/envio-internacional.png"></center>
                 <h1><b style="font-weigth:500">LOGISTICA</b><br><br></h1>
                 <p>Transporte y entrega de<br> productos. <br> <br> Seguimiento de transporte.<br><br>Logística inversa.</p>
                     

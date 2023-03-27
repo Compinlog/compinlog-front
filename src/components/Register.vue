@@ -3,15 +3,15 @@
     
         
         <div class="izquierda">
-          <img src="../assets/Logo Compinlog.svg" alt="Logo">
-          <img src="../assets/Preview.png" alt="Imagen">
+          <img src="../assets/Logo-Compinlog.svg" alt="Logo">
+          <img src="" alt="Imagen">
     
         </div>
     
         <div class="derecha">
           <div class="container">
             <form v-on:submit.prevent @submit="validarRegistro()">
-              <img src="../assets/Icono Compinlog.svg" alt="Icono">
+              <img src="../assets/Icono-Compinlog.svg" alt="Icono">
               <h1>Crear Cuenta</h1>
               <p>¡Unete a nuestra comunidad!</p>
     

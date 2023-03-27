@@ -16,7 +16,7 @@
     
             </div>
             <div class="banner__video">
-            <video src="mi_video.mp4" controls></video>
+            <video src="" controls></video>
             
         </div>
             
