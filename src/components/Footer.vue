@@ -96,7 +96,6 @@ hr{
     background-color: #717171; 
     height: 40%;
     width: 100%;
-    position: fixed;
     margin-top:32%;
 }
 
