@@ -1,12 +1,13 @@
 <script >
 
-import Membresia from './components/Membresia.vue'
+import Servicios from './components/Servicios.vue'
 
 export default{
    
     components: {
       
-      Membresia
+      
+      Servicios,
 }
 }
 </script>
@@ -14,7 +15,8 @@ export default{
 <template>
 
     <div>
-      <Membresia/>
+     
+      <Servicios/>
       
       
     </div>
