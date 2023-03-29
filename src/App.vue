@@ -1,29 +1,20 @@
-<script >
-
-import Servicios from './components/Servicios.vue'
-
-export default{
-   
-    components: {
-      
-      
-      Servicios,
-}
-}
-</script>
 
 <template>
-
-    <div>
-     
-      <Servicios/>
-      
-      
-    </div>
-  
-
+  <div>
+    <HeaderHome/>
+    <router-view/>
+    <Footer/>
+  </div>
 </template>
 
-<style >
+<script>
+import HeaderHome from '@/components/HeaderHome.vue'
+import Footer from '@/components/Footer.vue'
 
-</style>
+export default {
+  components: {
+    HeaderHome,
+    Footer,
+  }
+}
+</script>
