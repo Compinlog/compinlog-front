@@ -8,20 +8,13 @@
 </template>
 
 <script>
-import Footer from '@/components/Footer.vue'
 import HeaderHome from '@/components/HeaderHome.vue'
+import Footer from '@/components/Footer.vue'
+
 export default {
   components: {
     HeaderHome,
     Footer,
-
   }
 }
 </script>
-
-
-<style scoped>
-
-
-
-</style>

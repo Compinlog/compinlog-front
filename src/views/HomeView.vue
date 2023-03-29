@@ -1,8 +1,8 @@
 <script>
-import Membresia from '../components/Membresia.vue'
 import Cards from '../components/Cards.vue'
 import Banner from '../components/Banner.vue'
 import BlogHome from '../components/BlogHome.vue'
+import Membresia from '../components/Membresia.vue'
 
     export default {
     name: "Home-view", // Nombre del componente
@@ -14,8 +14,9 @@ import BlogHome from '../components/BlogHome.vue'
     components: {
         Banner,
         Cards,
+        BlogHome,
         Membresia,
-        BlogHome
+        
     }
 };
 </script>
