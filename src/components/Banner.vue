@@ -1,10 +1,10 @@
 <template>
   <div class="Banner">
     <div class="Descripción_Banner">
-      <h1 class="Banner_tittle">We Help Everyone Here For A Better Life</h1>
+      <h1 class="Banner_tittle" style="color: #8b53d5;">¡Todo lo que necesitas</h1><h1 class="Banner_tittle" style="margin-top:-2rem; color: #48cfad;">a un solo click de distancia!</h1>
       <p class="Banner_text">
         Aportamos soluciones a tu empresa, contamos con un equipo de trabajo especializado y
-        proveedores más competitivos del mercado
+        proveedores más competitivos del mercado.
       </p>
 
       <div class="botones_banner">
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="banner__video">
-      <video style="width: 100%; height: 100%; border-radius: 30px" src="" controls></video>
+      <video style="width: 100%; height: 100%; border-radius: 30px" src="@/assets/video/banner-video.mp4" controls></video>
     </div>
   </div>
 </template>
@@ -31,12 +31,12 @@ export default {}
   justify-content: center;
   background-color: #eee;
   gap: 122px;
+  margin-top: 4rem;
 }
 .Banner_tittle {
   font-weight: 700;
   font-size: 60px;
-  line-height: 93px;
-  color: #565656;
+  line-height: 60px;
   font-family: sans-serif;
   font-style: normal;
 }
@@ -78,7 +78,7 @@ export default {}
 }
 
 .banner__Registrarse {
-  background-color: #333;
+  background-color: #48cfad;
   color: #fff;
   padding: 10px 30px;
   border-radius: 5px;
@@ -86,6 +86,8 @@ export default {}
   font-size: 16px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
 }
 
 .banner__Registrarse :hover {
@@ -93,13 +95,15 @@ export default {}
 }
 
 .banner__Contact {
-  border: #333 solid 1px;
+  border: #48cfad solid 1px;
   color: black;
   padding: 10px 30px;
   border-radius: 5px;
+  font-family: sans-serif;
   margin-right: 10px;
   font-size: 16px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
 }
 </style>
