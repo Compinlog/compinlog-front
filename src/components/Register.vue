@@ -1,19 +1,15 @@
 <template>
     <section class="registroDiv">
-    
-        
         <div class="izquierda">
-          <img src="../assets/Logo-Compinlog.svg" alt="Logo">
-          <img src="" alt="Imagen">
-    
+          <div class="imagen">
+            <img style="height:100%; margin-top: 8rem; width: 100%;" src="../assets/Imagen-registro (2).svg" alt="Imagen">
+          </div>
         </div>
     
         <div class="derecha">
           <div class="container">
             <form v-on:submit.prevent @submit="validarRegistro()">
-              <img src="../assets/Icono-Compinlog.svg" alt="Icono">
-              <h1>Crear Cuenta</h1>
-              <p>¡Unete a nuestra comunidad!</p>
+              <img class="Icon" src="../assets/Icono-Compinlog.svg" alt="Icono">
     
               <label for="Nombre">Nombre de la Empresa:</label>
               <input v-model = "Nombre" type="text" id="Nombre" name="Nombre" /><br />
@@ -94,14 +90,14 @@
   
   <style scoped>
   .registroDiv{
-      display: flex;
-      height: 90%;
-      width: 90%;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
       margin: auto;
       justify-content: center;
-      padding: 0;
+      padding: 0 2rem;
       border-radius: 8px;
       box-shadow: 0px 0px 10px #000000a3;
+      background-color: white;
   }
   
   .derecha{
@@ -112,17 +108,25 @@
   }
   
   .izquierda{
-      
+      background-color: #ffffff;
       background-size: cover;
       background-position: center;
       width: 100%;
       border-radius: 3px;
       
   }
-  
+
+  .Icon{
+    display: flex;
+    width: 400px; 
+    height: 85px; 
+    margin: 5rem auto;
+  }
+
+
   .container form{
       width: 100%;
-      
+      padding: 2rem;
   }
   
   .container h1{
@@ -130,7 +134,7 @@
       margin: 0%;
       text-align: center;
       padding: 20px;
-      color:black;
+      color:black;   
   }
   
   .container p{
@@ -148,16 +152,19 @@
       margin-left: 12px;
       font-weight: bold;
       color: black;
+      font-family: 'Poppins';
   }
-  
+
   input[type="submit"]{
-      background-color: #4CAF50;
-      margin: 10%;
+      background-color: #373737;
       color: #fff;
-      padding: 10px 100px;
+      padding: 20px 200px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      font-family: 'Poppins';
+      margin: 5rem auto;
+      display: flex;
       
   }
     
@@ -179,6 +186,7 @@
       display: block;
       font-weight: bold;
       align-items: center;
+      font-family: 'Poppins';
   }
   
   
