@@ -3,6 +3,7 @@ import Cards from '../components/Cards.vue'
 import Banner from '../components/Banner.vue'
 import BlogHome from '../components/BlogHome.vue'
 import Membresia from '../components/Membresia.vue'
+import InicioComprador from '../components/InicioComprador.vue'
 
     export default {
     name: "Home-view", // Nombre del componente
@@ -12,6 +13,7 @@ import Membresia from '../components/Membresia.vue'
     },
     // estados o propiedades
     components: {
+        InicioComprador,
         Banner,
         Cards,
         BlogHome,
@@ -23,6 +25,7 @@ import Membresia from '../components/Membresia.vue'
 
 <template>
     <div>
+        <InicioComprador/>
         <Banner/>
         <Cards/>
         <BlogHome/>
