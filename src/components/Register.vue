@@ -1,12 +1,12 @@
 <template>
-    <section class="registroDiv">
-        <div class="izquierda">
-          <div class="imagen">
-            <img style="height:100%; margin-top: 8rem; width: 100%;" src="../assets/Imagen-registro (2).svg" alt="Imagen">
-          </div>
+    <section class="container-login">
+    
+        
+        <div class="container-login-img">
+          <img style="width: 100%;" src="../assets/image-login.svg" alt="" />
         </div>
     
-        <div class="derecha">
+        <div class="container-login-form">
           <div class="container">
             <form v-on:submit.prevent @submit="validarRegistro()">
               <img class="Icon" src="../assets/Icono-Compinlog.svg" alt="Icono">
@@ -89,6 +89,10 @@
   </script>
   
   <style scoped>
+    .container-login {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
   .registroDiv{
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -105,6 +109,12 @@
       height: 100%;
       width: 100%;
       border-radius: 3px;
+  }
+  .container-login-form {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    margin-right: 8rem;
   }
   
   .izquierda{
@@ -127,6 +137,13 @@
   .container form{
       width: 100%;
       padding: 2rem;
+  }
+
+  .container-login-img {
+    background: white;
+    width: 80%;
+    height: 80%;
+    margin-top: 4rem;
   }
   
   .container h1{

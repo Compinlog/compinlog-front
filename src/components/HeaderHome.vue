@@ -1,15 +1,15 @@
 <template>
   <header>
     <div class="logo">
-      <img src="../assets/logo.svg" alt="Compinlog" />
+      <img src="../assets/Logo-Compinlog.svg" alt="Compinlog" />
     </div>
     <nav>
       <ul class="MenuSuperior">
-        <li><button id="B_Home">Home</button></li>
-        <li><button id="B_Servicios">Servicios</button></li>
-        <li><button id="B_Membresias">Membresías</button></li>
-        <li><button id="B_Blog">Blog</button></li>
-        <li><button id="B_Login">Login</button></li>
+        <li><router-link class="navbar__link" to="/"><button id="B_Home">Home</button></router-link></li>
+        <li><router-link class="navbar__link" to="/"><button id="B_Servicios">Membresías</button></router-link></li>
+        <li><router-link class="navbar__link" to="/comprador"><button id="B_Membresias">Comprador</button></router-link></li>
+        <li><router-link class="navbar__link" to="/"><button id="B_Blog">Vendedor</button></router-link></li>
+        <li><router-link class="navbar__link" to="/login"><button id="B_Login" style="background-color: #48cfad; color:white;">Login</button></router-link></li>
       </ul>
     </nav>
   </header>
@@ -17,9 +17,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-html {
-  background-color: #f0f0f0;
-}
 
 header {
   top: 0px; /*Que se pegue a la parte superior de la ventana*/
@@ -78,7 +75,7 @@ button {
   color: #4a4a4a;
   background-color: #f0f0f0;
   border-radius: 5px;
-  border: 1px solid #989898;
+  border: 1px solid #48cfad;
   font-family: sans-serif;
   font-size: 12px;
   font-weight: bold; /*Grosor de letra*/
@@ -91,9 +88,7 @@ button {
 
 #B_Home {
   /*Estilos para un ID especial*/
-  color: white;
-  border: 1px solid #373737;
-  background-color: #373737;
+  border: 1px solid #48cfad;
 }
 
 h3 {
