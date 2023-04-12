@@ -1,18 +1,18 @@
 <template>
   <div class="container">
     <div>
-      <h1 style="font-weight: 950">¡Las membresías que tenemos para ti!</h1>
+      <h1 style="font-weight: 950; color: #8b53d5;">¡Las membresías que tenemos para ti!</h1>
       <br />
       <h3 style="text-align: center">
         Únete a Compinlog y disfruta beneficios exclusivos que se <br />
         ajusten a tus necesidades y metas.
       </h3>
-      <br /><br />
+      <br/><br />
     </div>
     <div class="card">
       <div class="left-column-background1">
-        <h3 style="font-weight: 800">Membresía <br />COMPRADOR</h3>
-        <h1 style="font-weight: 900">$PRECIO</h1>
+        <h3 style="font-weight: 800">Membresía <br/>COMPRADOR</h3>
+        <h1 style="font-weight: 900">$69.900</h1>
         <h6>por mes</h6>
         <button class="button-background1-left-column">Obtener ahora</button>
       </div>
@@ -21,8 +21,8 @@
           <img src="../assets/circle-cards.svg" style="margin-right: 1rem" />
           <h2>Asesoría especializada en los departamentos de compra, inventario y Logística</h2>
         </div>
-        <h2><img src="../assets/circle-cards.svg" /> Soporte 24/7 y con mayor prioridad</h2>
-        <h2><img src="../assets/circle-cards.svg" /> Cotizaciones más rápidas y sin límites</h2>
+        <h2><img src="../assets/circle-cards.svg" style="margin-right: 1rem" /> Soporte 24/7 y con mayor prioridad</h2>
+        <h2><img src="../assets/circle-cards.svg" style="margin-right: 1rem" /> Cotizaciones más rápidas y sin límites</h2>
       </div>
     </div>
     <div class="card">
@@ -34,9 +34,9 @@
 
       <div class="right-column">
         <h2>
-          <img src="../assets/circle-cards.svg" /> Incrementa tus ventas de forma mas sencilla
+          <img src="../assets/circle-cards.svg" style="margin-right: 1rem" /> Incrementa tus ventas de forma mas sencilla
         </h2>
-        <h2><img src="../assets/circle-cards.svg" /> Mayor vísibilidad para los compradores</h2>
+        <h2><img src="../assets/circle-cards.svg" style="margin-right: 1rem" /> Mayor vísibilidad para los compradores</h2>
         <div style="display: flex">
           <img src="../assets/circle-cards.svg" style="margin-right: 1rem" />
           <h2>Envía cotizaciones a una gran cantidad de compradores</h2>
@@ -78,7 +78,7 @@ h2 {
   display: grid;
   grid-row: 0.5rem;
   text-align: center;
-  background: #e0e0e0;
+  background: linear-gradient(to top, rgba(11, 170, 91, 0.199) 70%, #48cfad 140.27%);
   border-radius: 30px;
   color: #171923;
   padding: 2rem;
@@ -129,9 +129,11 @@ h2 {
   letter-spacing: 0.1rem;
   align-self: center;
   width: 180px;
-  background: #69686a;
+  background: #48cfad;
   border: none;
   text-decoration: none;
   box-sizing: border-box;
+  margin: 0rem auto;
+  cursor: pointer;
 }
 </style>
