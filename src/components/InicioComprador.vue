@@ -52,7 +52,7 @@
     height: 115px;
     left: 99px;
     top: 28px;
-    padding: 50px;
+    padding: 30px;
 }
 
 .card h1{
@@ -67,7 +67,7 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 15px;
-    padding: 15px;
+    padding: 30px;
 }
 
 .title{
