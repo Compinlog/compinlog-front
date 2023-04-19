@@ -20,11 +20,12 @@
             </div>
             <input class="button-send-form" type="submit" value="Iniciar Sesion" />
           </form>
-        </div>
-        <div class="login__text-register">
+          <div class="login__text-register">
           ¿Todavía no eres miembro?
           <router-link to="/register">Regístrate</router-link>
         </div>
+        </div>
+        
       </div>
     
   </template>
@@ -79,5 +80,9 @@
     box-shadow: 9px 9px 10px rgba(114, 113, 255, 0.25);
     border-radius: 0.5rem;
     border: #48cfad;
+  }
+  .login__text-register {
+    margin-top: 4rem;
+    font-family: sans-serif;
   }
   </style>
