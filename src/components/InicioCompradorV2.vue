@@ -32,6 +32,9 @@
                             <div class="box3R2">
                                 <button><strong>EDIT PURCHASE ORDER</strong></button>
                             </div>
+                            <div class="b">
+                                <p><strong>DOCUMENTS</strong></p>
+                            </div>
                             <div class="box3R2">
                                 <button><strong>ADD DOCUMENTS</strong></button>
                             </div>
@@ -53,6 +56,20 @@
     gap: 20px;
     background-color: #f0f0f0;
     padding: 100px;
+}
+.b {
+    width: 100%;
+    height: 8%;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 20px 20px 0 0;
+    margin-top: 1%;
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+}
+.b p{
+    margin-left: 15px;
 }
 
 
