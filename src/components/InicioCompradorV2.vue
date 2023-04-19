@@ -64,7 +64,7 @@
     border-left: 2px solid white;
     border-right: 2px solid white;
     border-radius: 20px 20px 0 0;
-    margin-top: 1%;
+    margin-top: 2%;
     color: gray;
     font-family: 'Poppins', sans-serif;
 }
@@ -150,7 +150,7 @@
     width: 900px;
     height: 530px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0px 10px 10px 4px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,11 +159,15 @@
     width: 100%;
     height: 100%;
     background-color: rgb(215, 245, 245);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 .cardBoxR   {
     width: 100%;
     height: 100%;
     background-color: rgb(232, 215, 247);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .box img {
