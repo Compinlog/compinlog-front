@@ -1,11 +1,6 @@
 <template>
-    <section class="container-login">
-    
-        
-        <div class="container-login-img">
-          <img style="width: 100%;" src="../assets/image-login.svg" alt="" />
-        </div>
-    
+  <div class ="image-principal">
+    <section class="container-login">   
         <div class="container-login-form">
           <div class="container">
             <form v-on:submit.prevent @submit="validarRegistro()">
@@ -28,11 +23,41 @@
                 <option value="comprador">Comprador</option>
                 <option value="vendedor">vendedor</option></select
                 ><br/>
-              <input type="submit" value="Crear Cuenta">
-            </form>
+                  
+                  <label for="Certificado-existencia">Certificado existencia: </label>
+                  <div class="file-select"> 
+                    <img style="margin-top: 5px; width: 20px; position: absolute; margin-right: 180px;" src="../assets/cloud-computing.svg" alt="upload-icon">
+                    <label  style ="margin-right: -20px;  height: 20px; width: 100%; " class="label-select" for="certificado_existencia">Subir documento</label>
+                    <input style="display: none;" type="file" id="certificado_existencia" name="certificado_existencia"/><br/>
+                  </div>
+                  
+                  <label for="Certificado-cuenta bancaria">Certificado de cuenta bancaria: </label>
+                  <div class="file-select">
+                    <label for=""></label>
+                    <img style="margin-top: 5px; width: 20px; position: absolute; margin-right: 180px;" src="../assets/cloud-computing.svg" alt="upload-icon">
+                    <label style ="margin-right: -20px;  height: 20px; width: 100%; " class="label-select" for="certificado_bancario">Subir documento</label>
+                    <input style="display: none;" type="file" id="certificado_bancario" name="certificado_bancario"><br />
+                  </div>
+                  
+                  <label for="Certificado-RUT">Certificado de RUT: </label>
+                  <div class="file-select">
+                    <label for=""></label>
+                    <img style="margin-top: 5px; width: 20px; position: absolute; margin-right: 180px;" src="../assets/cloud-computing.svg" alt="upload-icon">
+                    <label style ="margin-right: -20px; height: 20px; width: 100%; " class="label-select" for="copia_rut">Subir documento</label>
+                    <input style="display: none;" type="file" id="copia_rut" name="copia_rut"><br />
+                  </div>
+
+                  <div class="check-terms">
+                    <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones">
+                    <label for="terminos_condiciones">He leído y acepto los términos y condiciones</label><br />
+                  </div>
+
+                </form>
+              <input type="submit" value="Crear Cuenta">   
           </div>
         </div>
     </section>
+  </div>
   </template>
   
   <script>
@@ -76,8 +101,6 @@
         },
     
         ValidaContraseña(_Contraseña){
-            // var regrex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-            // return regrex.test(_Contraseña);
             if(this.Contraseña.search(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/)){
               alert('La contraseña debe contener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número')
   
@@ -90,8 +113,14 @@
   
   <style scoped>
     .container-login {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    display: flex;
+    margin: 2rem auto;
+    width: 700px;
+  }
+
+  .image-principal{
+    background-image: url("../assets/image-login.svg") ;
+    background-size: cover;
   }
   .registroDiv{
       display: grid;
@@ -115,6 +144,7 @@
     padding: 2rem;
     text-align: center;
     margin-right: 8rem;
+    border-radius: 20px;
   }
   
   .izquierda{
@@ -136,7 +166,7 @@
 
   .container form{
       width: 100%;
-      padding: 2rem;
+      
   }
 
   .container-login-img {
@@ -165,17 +195,29 @@
   
   label{
       display: block;
-      margin-bottom: 10px;
       margin-left: 12px;
       font-weight: bold;
       color: black;
       font-family: 'Poppins';
+      text-align:left;
+      
+  }
+
+  .label-select{
+    color:gray;
+    font-weight: bold;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 16px;
+  
   }
 
   input[type="submit"]{
       background-color: #373737;
       color: #fff;
-      padding: 20px 200px;
+      width: 90%;
+      height: 45px;
+      justify-content: center;
       border: none;
       border-radius: 8px;
       cursor: pointer;
@@ -205,8 +247,39 @@
       align-items: center;
       font-family: 'Poppins';
   }
+
+.file-select input[type="file"]{
+  opacity: 0;
+  width: 100%;
+  display: inline-block;
   
   
+}
+
+.file-select{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 35px;
+  padding: 2px;
+  border-radius: 12px;
+  background-color:white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s;
+  height: 40px;
+  width: 90%;
+   
+}
+
+.check-terms{
+display: flex;
+}
+input[type="checkbox"] {
+  display:flex;
+  margin-right:10px;
+}
   </style>
   
   
