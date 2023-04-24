@@ -1,3 +1,4 @@
+
 <template>
   <div class="Banner">
     <div class="Descripción_Banner">
@@ -29,7 +30,7 @@ export default {}
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  background-color: #eee;
+  background-color: #FFFFFF;
   gap: 122px;
 }
 .Banner_tittle {
@@ -48,7 +49,7 @@ export default {}
   font-size: 20px;
   line-height: 30px;
 
-  color: #000000;
+  color:#697279;
 }
 
 .banner__video {
@@ -78,8 +79,8 @@ export default {}
 }
 
 .banner__Registrarse {
-  background-color: #333;
-  color: #fff;
+  background-color: #CA4720 ;
+  color: #FFFFFF;
   padding: 10px 30px;
   border-radius: 5px;
   margin-right: 30px;
@@ -94,12 +95,13 @@ export default {}
 
 .banner__Contact {
   border: #333 solid 1px;
-  color: black;
+  color: #FFFFFF;
   padding: 10px 30px;
   border-radius: 5px;
   margin-right: 10px;
   font-size: 16px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  background-color: #697279
 }
 </style>

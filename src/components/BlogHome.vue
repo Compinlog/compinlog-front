@@ -1,3 +1,4 @@
+
 <template>
   <div id="contenedor_completo_blog">
     <!--COMPRADOR-->
