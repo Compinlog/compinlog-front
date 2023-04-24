@@ -9,26 +9,80 @@
           <p style="font-family: sans-serif;">
             ¡Todo lo que necesitas a un solo click de distancia! Compras, inventarios y logística.
           </p>
-          <form class="form-style">
+          <form class="form-style" @submit.prevent="handleSubmit">
             <div>
               <label for="">User name</label>
-              <input class="input-form-login" type="text" style="width: 100%" placeholder="Correo Electrónico"/>
+              <input v-model="email" class="input-form-login" type="text" style="width: 100%" placeholder="Correo Electrónico"/>
             </div>
             <div>
               <label for="">password</label>
-              <input class="input-form-login" type="text" style="width: 100%" placeholder="Contraseña"/>
+              <input v-model="password" class="input-form-login" type="password" style="width: 100%" placeholder="Contraseña"/>
             </div>
             <input class="button-send-form" type="submit" value="Iniciar Sesion" />
+
           </form>
           <div class="login__text-register">
           ¿Todavía no eres miembro?
           <router-link to="/register">Regístrate</router-link>
         </div>
         </div>
-        
       </div>
-    
-  </template>
+</template>
+
+<script>
+// import { ref } from 'vue'
+// import { useStore } from 'vuex'
+// import { useRouter } from 'vue-router'
+
+export default {
+  name: 'Register-view',
+
+  data() {
+    return {
+        email: '',
+        password: '',
+    }
+  },
+  
+  methods: {
+    async handleSubmit(){
+      try {
+        await this.$store.dispatch('login', {
+          email: this.email,
+          password: this.password
+        })
+        // this.$router.push('/')
+      }
+      catch (err) {
+        console.log(err)
+      }
+    }
+  },
+  // setup() {
+  //   const email = ref('')
+  //   const password = ref('')
+  //   const error = ref(null)
+
+  //   const store = useStore()
+  //   const router = useRouter()
+
+  //   const handleSubmit = async () => {
+  //     try {
+  //       await store.dispatch('login', {
+  //         email: this.email,
+  //         password: this.password
+  //       })
+  //       this.$router.push('/')
+  //     }
+  //     catch (err) {
+  //       console.log(err)
+  //     }
+  //   }
+  //   return { handleSubmit, email, password, error }
+  // }
+}
+</script>
+  
   
   <style scoped>
   .container-login {
