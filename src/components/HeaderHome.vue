@@ -3,23 +3,67 @@
     <div class="logo">
       <img src="../assets/logo.svg" alt="Compinlog" >
       </div>
-    <nav>
-      <ul class = "MenuSuperior">
-        <li><button id="B_Home">Home</button></li>
-
-        <li><button id="B_Servicios">Servicios</button></li>
-
-        <li><button id="B_Membresias">Membresías</button></li>
-
-        <li><button id="B_Blog">Blog</button></li>
-
-        <li><button id="B_Login">Login</button></li>
+      <nav>
+      <ul class="MenuSuperior">
+        <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Home">Home</button></router-link></li>
+        <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Servicios">Membresías</button></router-link></li>
+        <li><router-link class="navbar__link" to="/comprador"><button class= "botonmenu" id="B_Membresias" >Comprador</button></router-link></li>
+        <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Blog" >Vendedor</button></router-link></li>
+        <li><router-link class="navbar__link" to="/login"><button class= "botonmenu" id="B_Login" style="background-color: #48cfad; color:white;" >Login</button></router-link></li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script>
+
+//function cambiarColor(){
+//  var boton = document.querySelector('.botonmenu');
+//  boton.style.backgroundColor = 'black';
+//  boton.style.color = 'white';
+//}
+//document.getElementById("B_Servicios").onclick = function(){
+//  cambiarColor();
+//};
+
+  //function cambiar_colorB_Servicios(){
+  //document.getElementById("B_Servicios").style.background = "#373737";  
+  //document.getElementById("B_Servicios").style.border = "1px solid #373737";
+  //document.getElementById("B_Servicios").style.color = "white";
+//}
+  //document.getElementById("B_Servicios").onclick = function(){
+  //  cambiar_colorB_Servicios();
+  //}
+
+  //function cambiar_colorB_Membresias(){
+  //document.getElementById("B_Membresias").style.background = "#373737";  
+  //document.getElementById("B_Membresias").style.border = "1px solid #373737";
+  //document.getElementById("B_Membresias").style.color = "white";
+//}
+  //document.getElementById("B_Membresias").onclick = function(){
+  //  cambiar_colorB_Membresias();
+  //}
+
+  //function cambiar_colorB_Blog(){
+  //document.getElementById("B_Blog").style.background = "#373737";  
+  //document.getElementById("B_Blog").style.border = "1px solid #373737";
+  //document.getElementById("B_Blog").style.color = "white";
+//}
+  //document.getElementById("B_Blog").onclick = function(){
+  //  cambiar_colorB_Blog();
+  //}
+
+  //function cambiar_colorB_Login(){
+  //document.getElementById("B_Login").style.background = "#373737";  
+  //document.getElementById("B_Login").style.border = "1px solid #373737";
+  //document.getElementById("B_Login").style.color = "white";
+//}
+  //document.getElementById("B_Login").onclick = function(){
+  //  cambiar_colorB_Login();
+  //}
+
+
+
 //export default {
 //  name: 'Header',
 //  props: {
@@ -108,15 +152,32 @@ button{ /*Estilos de los botones*/
   border: 1px solid #373737;
   background-color: #373737;
 }
+.botonmenu:hover{
+  color: white;
+  border: 1px solid #373737;
+  background-color: #92928d;
+}
+
+.botonmenu:focus{ /*Cambiar el color del boton cuando uno le da click sobre él */
+  color: white;
+  border: 1px solid #6e6969;
+  background-color: #ad1c1c;
+}
 
 
 
+/*Oculto el checkbox*/
+/*#evento-click{
+  display: none;
+}
+
+#evento-click:checked ~ .botonmenu{
+  background-color: #48cfad;
+  color:white;
+}*/
 
 /*Display: grid  - Es una instrucción CSS para poner todo en forma de cuadriculas*/
-
-
-
-
+/*onclick= "cambioboton()"*/
 
 
 h3 {
@@ -133,6 +194,7 @@ li {
 /*a {
   color: #42b983;
 }*/
+
 </style>
 
 
