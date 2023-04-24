@@ -1,3 +1,4 @@
+
 <template>
   <header>
     <div class="logo">
@@ -17,53 +18,6 @@
 
 <script>
 
-//function cambiarColor(){
-//  var boton = document.querySelector('.botonmenu');
-//  boton.style.backgroundColor = 'black';
-//  boton.style.color = 'white';
-//}
-//document.getElementById("B_Servicios").onclick = function(){
-//  cambiarColor();
-//};
-
-  //function cambiar_colorB_Servicios(){
-  //document.getElementById("B_Servicios").style.background = "#373737";  
-  //document.getElementById("B_Servicios").style.border = "1px solid #373737";
-  //document.getElementById("B_Servicios").style.color = "white";
-//}
-  //document.getElementById("B_Servicios").onclick = function(){
-  //  cambiar_colorB_Servicios();
-  //}
-
-  //function cambiar_colorB_Membresias(){
-  //document.getElementById("B_Membresias").style.background = "#373737";  
-  //document.getElementById("B_Membresias").style.border = "1px solid #373737";
-  //document.getElementById("B_Membresias").style.color = "white";
-//}
-  //document.getElementById("B_Membresias").onclick = function(){
-  //  cambiar_colorB_Membresias();
-  //}
-
-  //function cambiar_colorB_Blog(){
-  //document.getElementById("B_Blog").style.background = "#373737";  
-  //document.getElementById("B_Blog").style.border = "1px solid #373737";
-  //document.getElementById("B_Blog").style.color = "white";
-//}
-  //document.getElementById("B_Blog").onclick = function(){
-  //  cambiar_colorB_Blog();
-  //}
-
-  //function cambiar_colorB_Login(){
-  //document.getElementById("B_Login").style.background = "#373737";  
-  //document.getElementById("B_Login").style.border = "1px solid #373737";
-  //document.getElementById("B_Login").style.color = "white";
-//}
-  //document.getElementById("B_Login").onclick = function(){
-  //  cambiar_colorB_Login();
-  //}
-
-
-
 //export default {
 //  name: 'Header',
 //  props: {
@@ -75,50 +29,40 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-html{
-  background-color: #F0F0F0;
+header {
+  top: 0px; /*Que se pegue a la parte superior de la ventana*/
+  align-items: center;
+  display: flex;
+  height: 75px;
+  /*padding: 10px; /*Borde interno del header*/
+  padding-top: 43px;
+  margin: 0px;
+  border: none;
+  background-color: #f0f0f0;
+  justify-content: space-between;
 }
 
-header{
-top: 0px; /*Que se pegue a la parte superior de la ventana*/
-align-items: center;
-display: flex;
-/*display: inline-block;*/
-width: 100vw;/*100% ancho de la ventana*/
-height: 75px;
-/*padding: 10px; /*Borde interno del header*/
-padding-top: 43px;
-margin: 0px;
-border: none;
-background-color: #F0F0F0;
-justify-content: space-between;
+.logo {
+  /*Contenedor que guarda el logo*/
+  height: 75px;
+  width: 35%; /*Ancho del 35% del ancho total del padre Header*/
+  border: none;
+  display: flex;
+  margin-left: 63px;
+  /*align-items: left; /*Que pegue el logo a la parte izquierda del header*/
+  /*justify-content: center;*/
+  float: left; /*Mandar el logo a la parte derecha*/
 }
 
-/*nav{
-align-items: center;
-display: flex;
-}*/
-
-.logo{ /*Contenedor que guarda el logo*/
-height: 75px;
-width: 35%; /*Ancho del 35% del ancho total del padre Header*/
-border: none;
-display: flex;
-margin-left: 63px;
-/*align-items: left; /*Que pegue el logo a la parte izquierda del header*/
-/*justify-content: center;*/
-float:left; /*Mandar el logo a la parte derecha*/
-}
-
-.MenuSuperior{
-  width: 600px; 
+.MenuSuperior {
+  width: 600px;
   height: 30px;
   display: flex; /*Para que el menu se ponga horizontal*/
   /*display: flex-end;*/
   align-content: right;
   margin-left: auto;
   margin-right: 40px;
-  list-style: none; /*Para que no salgan las viñetas negras que enumeran los elementos de la lista*/  
+  list-style: none; /*Para que no salgan las viñetas negras que enumeran los elementos de la lista*/
   float: right;
   align-items: center;
 }
@@ -129,28 +73,28 @@ li {
   margin-right: auto; /*Margenes auto para que se ajusten proporcionalmente al ancho del menu superior navbar*/
 }
 
-button{ /*Estilos de los botones*/
+button {
+  /*Estilos de los botones*/
   position: relative;
   width: 100px;
   height: 35px;
-  color: #4A4A4A;
-  background-color: #F0F0F0;
+  color: #4a4a4a;
+  background-color: #f0f0f0;
   border-radius: 5px;
-  border: 1px solid #989898;
+  border: 1px solid #48cfad;
   font-family: sans-serif;
   font-size: 12px;
-  font-weight: bold;/*Grosor de letra*/
+  font-weight: bold; /*Grosor de letra*/
   align-items: center;
   justify-content: center;
-  /*box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3); /*La sombra que hay debajo de cada botón*/  
+  /*box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3); /*La sombra que hay debajo de cada botón*/
   box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-   
-#B_Home{  /*Estilos para un ID especial*/
-  color: white;
-  border: 1px solid #373737;
-  background-color: #373737;
+
+#B_Home {
+  /*Estilos para un ID especial*/
+  border: 1px solid #48cfad;
 }
 .botonmenu:hover{
   color: white;
@@ -163,21 +107,6 @@ button{ /*Estilos de los botones*/
   border: 1px solid #6e6969;
   background-color: #ad1c1c;
 }
-
-
-
-/*Oculto el checkbox*/
-/*#evento-click{
-  display: none;
-}
-
-#evento-click:checked ~ .botonmenu{
-  background-color: #48cfad;
-  color:white;
-}*/
-
-/*Display: grid  - Es una instrucción CSS para poner todo en forma de cuadriculas*/
-/*onclick= "cambioboton()"*/
 
 
 h3 {
@@ -196,6 +125,5 @@ li {
 }*/
 
 </style>
-
 
 

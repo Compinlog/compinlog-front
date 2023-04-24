@@ -1,128 +1,146 @@
+
 <template>
-    <div>
-        <footer class="footer">
-            
-                <div class="divCenter">
-                    <p class="nameColumLeft"><strong>Company</strong></p>
-                    <p class="nameColum1">About Us</p>
-                    <p class="nameColum1">Why Choose Us</p>
-                    <p class="nameColum1">Princing</p>
-                    <p class="nameColum1">Testimonial</p>
-                    
-                </div>
-                <div>
-                    <p class="nameColum"><Strong>Resources</Strong></p>
-                    <p>Privacy Policy</p>
-                    <p>Terms and Conditions</p>
-                    <p>Blog</p>
-                    <p>Contact Us</p>
-                </div>
-                <div>
-                    <p class="nameColum"><strong>Products</strong></p>
-                    <p>Project Managment</p>
-                    <p>Time Tacker</p>
-                    <p>Time Schedule</p>
-                    <p>Lead Generate</p>
-                    <p>Remote Colaboration</p>
-                </div>
-                <div>
-                    <p class="nameColumCompinlog"><img src="@/assets/logoCompinlog.png" width="70px" height="70px"><strong>Compinlog</strong></p>
-                    <p class="nameColum"><strong>Contact Us</strong></p>
-                    <p><input class="input" type="text"><button class="btn">Get Started</button></p>
-                </div>
-                <hr><div class="social">Copyright @2022</div> 
-                    <div>
-                    <a class="social" href="facebook.com"><img src="@/assets/face.png" width="50px" height="30px"></a>
-                    <a class="social"  href="facebook.com"><img src="@/assets/twit.png" width="30px" height="30px"></a>
-                    <a class="social"  href="facebook.com"><img src="@/assets/insta.png" width="30px" height="30px"></a>
-                    <a class="social"  href="facebook.com"><img src="@/assets/link.png" width="30px" height="30px"></a></div>
-                    <div><hr class="hrRigth"></div>
-            
-        </footer>
-    </div>
+  <div style="margin-top: 90px;">
+    <footer class="footer">
+      <div class="container-text-footer">
+        <div class="divCenter">
+          <p class="nameColumLeft"><strong>Company</strong></p>
+          <p class="nameColum1">About Us</p>
+          <p class="nameColum1">Why Choose Us</p>
+          <p class="nameColum1">Princing</p>
+          <p class="nameColum1">Testimonial</p>
+        </div>
+        <div>
+          <p class="nameColum"><Strong>Resources</Strong></p>
+          <p>Privacy Policy</p>
+          <p>Terms and Conditions</p>
+          <p>Blog</p>
+          <p>Contact Us</p>
+        </div>
+        <div>
+          <p class="nameColum"><strong>Products</strong></p>
+          <p>Project Managment</p>
+          <p>Time Tacker</p>
+          <p>Time Schedule</p>
+          <p>Lead Generate</p>
+          <p>Remote Colaboration</p>
+        </div>
+        <div>
+          <p class="nameColumCompinlog">
+            <img src="@/assets/logoCompinlog.png" width="70px" height="70px" /><strong
+              >Compinlog</strong
+            >
+          </p>
+          <p class="nameColum"><strong>Contact Us</strong></p>
+          <p><input class="input" type="text" /><button class="btn">Get Started</button></p>
+        </div>
+      </div>
+      <div class="container-social-footer">
+        <hr />
+        <div class="social">Copyright @2022</div>
+        <div style="display: flex">
+          <a class="social" href="facebook.com"
+            ><img class="image-social-footer" src="@/assets/face.png"
+          /></a>
+          <a class="social" href="facebook.com"
+            ><img class="image-social-footer" src="@/assets/twit.png"
+          /></a>
+          <a class="social" href="facebook.com"
+            ><img class="image-social-footer" src="@/assets/insta.png"
+          /></a>
+          <a class="social" href="facebook.com"
+            ><img class="image-social-footer" src="@/assets/link.png"
+          /></a>
+        </div>
+        <hr />
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
-
 </script>
 
 <style scoped>
-
-.nameColum1{
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.footer {
+  background: linear-gradient( rgba(92, 6, 206, 0.651) 70%, #3d028a 120.27%);
+  height: 40%;
+  padding: 56px;
 }
 
-.nameColumLeft{
-    
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.container-text-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  margin-bottom: 1.5rem;
+}
+.nameColum1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.hrRigth{
-    width: 720px;
+.nameColumLeft {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-p{
-    color: rgb(194, 194, 194);
-    
-    margin-left: 10%;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+p {
+  color: rgb(194, 194, 194);
+  margin-left: 10%;
+  font-family: sans-serif;
 }
 
-hr{
-    width: 520px;
-    height: 2px;
-    background: white;
-    display: grid;
-    grid-template-rows: 1fr;
-    margin-left: 15px;
-    margin-right: 15px;
+hr {
+  width: 30%;
+  height: 2px;
+  background: white;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.social{
-    color: white;
-    margin-right: 15px;
+.social {
+  color: white;
+  margin-right: 15px;
 }
 
-.footer
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #717171; 
-    height: 40%;
-    width: 100%;
-    position: fixed;
-    margin-top:32%;
+.nameColum {
+  color: white;
 }
 
-.nameColum{
-    color: white;
+.nameColumCompinlog {
+  color: white;
+  font-style: normal;
+font-weight: 400;
+font-size: 50px;
+margin: 0;
 }
 
-.nameColumCompinlog{
-    color: white;
-    font-size: 300%;
-    margin-bottom: 0%;
+.btn {
+  background: #48cfad;
+  border: #48cfad;
+  color: white;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 20px;
+  width: 195px;
+  height: 47px;
 }
 
-.btn{
-    background: black;
-    color: white;
-    border-radius: 8px;
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
+.input {
+  font-size: 19px;
+  border-radius: 8px;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 39px;
 }
 
-.input{
-    color: black;
-    font-size: 19px;
-    border-radius: 8px;
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+.image-social-footer {
+  width: 20px;
 
+}
+.container-social-footer {
+  display: flex;
+  justify-content: space-between;
+}
 </style>
