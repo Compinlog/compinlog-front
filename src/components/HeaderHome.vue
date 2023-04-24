@@ -2,7 +2,7 @@
 <template>
   <header>
     <div class="logo">
-      <img src="../assets/Logo-Compinlog.svg" alt="Compinlog" />
+      <img src="../assets/img/logo1.png" alt="Compinlog" />
     </div>
     <nav>
       <ul class="MenuSuperior">
