@@ -63,7 +63,7 @@
 
 <style scoped>
 .footer {
-  background-color: #717171;
+  background: linear-gradient( rgba(92, 6, 206, 0.651) 70%, #3d028a 120.27%);
   height: 40%;
   padding: 56px;
 }
@@ -118,7 +118,8 @@ margin: 0;
 }
 
 .btn {
-  background: #373737;
+  background: #48cfad;
+  border: #48cfad;
   color: white;
   border-radius: 8px;
   font-family: sans-serif;
