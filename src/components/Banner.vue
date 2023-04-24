@@ -1,3 +1,4 @@
+
 <template>
   <div class="Banner">
     <div class="Descripción_Banner">
@@ -29,7 +30,7 @@ export default {}
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  background-color: #eee;
+  background-color: #FFFFFF;
   gap: 122px;
   margin-top: 4rem;
 }
@@ -48,7 +49,7 @@ export default {}
   font-size: 20px;
   line-height: 30px;
 
-  color: #000000;
+  color:#697279;
 }
 
 .banner__video {
