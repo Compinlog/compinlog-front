@@ -9,7 +9,7 @@
             src=""
             alt="logo"
           />
-          <p class="card_numero" style="margin-bottom: 15px">0000 0000 0000 0000</p>
+          <p class="card_numero" style="margin-bottom: 15px; color:black;">0000 0000 0000 0000</p>
 
           <div
             class="card_details"
@@ -20,15 +20,15 @@
               text-transform: uppercase;
             "
           >
-            <p class="card_details_nombre">Nombre Tarjeta</p>
-            <p><span class="card_mes">00</span><span class="card_año">/00</span></p>
+            <p class="card_details_nombre" style="color:black;">Nombre Tarjeta</p>
+            <p><span class="card_mes" style="color:black;">00</span><span style="color:black;" class="card_año">/00</span></p>
           </div>
         </div>
 
         <div class="card-back">
           <p
             class="card-back_code"
-            style="font-size: 0.7rem; margin-top: 50px; text-align: right; padding-right: 10px"
+            style="font-size: 0.7rem; margin-top: 50px; text-align: right; padding-right: 10px; color:black;"
           >
             000
           </p>
@@ -267,19 +267,6 @@ botonConfirm.addEventListener('click', (event) => {
 </script>
 
 <style scoped>
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background: linear-gradient(121deg, rgba(86,195,148,1) 0%, rgba(55,63,103,1) 52%, rgba(0,212,255,1) 100%);
-    color: black;
-    font-family: 'Poppins';
-    font-size: 18px;
-    background-size: contain;
-} */
 
 .main-container {
   margin: 100px 65%;
