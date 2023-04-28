@@ -75,7 +75,7 @@
   font-style: normal;
   font-size: 60px;
   font-weight: 800;
-  margin-top: 100px;
+  margin-top: 90px;
   
 }
 .button-comprador {

@@ -1,10 +1,11 @@
 
 <template>
     <div class="separador"></div>
-        <h1>Crea y gestiona todas tus órdenes de compra en el mismo lugar</h1>
+        <h1 >Crea y gestiona todas tus órdenes de compra<span style="color:#1E1E21 "> en un solo lugar. </span></h1>
         <p class="parrafo">Ahorra tiempo, presupuesto y esfuerzo al gestionar tu departamento de compras desde un solo lugar.
         Nuestra plataforma te ofrece la mejor manera para hacerlo: más rápido, sencillo y eficaz. ¡Diseñado para
         tu éxito!</p> 
+
         <div class="separador2"></div>
     
    <div class="cajon">
@@ -17,7 +18,7 @@
 
         <div class="bloquedos">
         <p class ="textodiv">1.600M+</p>
-        <p class ="textodiv1">En transacciones exitosas</p> 
+        <p class ="textodiv1">transacciones exitosas</p> 
         </div>
 
         <div class="contenedor_vertical"><div class="vertical"></div></div>
@@ -36,14 +37,12 @@
 <!--Segunda parte del landing-->
    <div class="cajon2">
     <div class="imagen">
-        <img src="../assets/imagen1LV.png" alt="Dibujo" >
+        <img style="width: 600px; padding:0px 20px 0px -10px, margin-left:30px" src="@/assets/img/comp.png"/>
     </div>
-    <div class="textocajon2">
-        <h4>COMPRAS A CRÉDITO</h4>
-        <h2>Despídete de los problemas de
-    flujo de caja: Obtén créditos para
-    comprar todo lo que necesites.</h2>
-    <p class="parrafo2">¡Déjate de preocupaciones y aprovecha todas las oportunidades de compra que se te presenten! Con nosotros, financiar tus compras es fácil e inmediato. Olvídate de los proveedores que no ofrecen créditos y disfruta de todas las opciones de compra sin ninguna preocupación. Contamos con el respaldo necesario para garantizar el pago a tus proveedores.</p>
+    <div >
+        <h4 style="margin-top:-10px; margin-left:-15px; margin-right: 40px; color:#1E1E21 font-size:60px; font-size:20px">COMPRAS A CRÉDITO</h4>
+        <span style=" width:800px;" class="textocajon2">Despídete de los problemas de flujo de caja: Obtén créditos para comprar todo lo que necesites.</span>
+    <p class="parrafo2">¡Déjate de preocupaciones y aprovecha todas las oportunidades de compra que se te presenten! <br>Con nosotros, financiar tus compras es fácil e inmediato. Olvídate de los proveedores que no ofrecen créditos y disfruta de todas las opciones de compra sin ninguna preocupación. Contamos con el respaldo necesario para garantizar el pago a tus proveedores.</p>
     </div>
    </div>
 
@@ -57,6 +56,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap');
+
+
 
 .separador, .separador1{
   width: 100vw; 
@@ -75,56 +78,52 @@
   align-items: center;
   border-radius: 15px;
   margin: auto;
+  background-color: #C0C0C2 ;
 }
 
 .bloqueuno{
-font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
---e-global-typography-accent-font-family: "Roboto";
-background-color: #d8d3d3;
 width: 150px;
 height: 70px;
 padding: 10px;
 display: flex;
 border-radius: 12px 0px 0px 12px; 
 align-items: center; /*Centra a nivel vertical*/
-color: #333;
+color:  #1E1E21 ;
 flex-direction: column; /*Hace que el display flex sea en sentido vertical y no horizontal*/
 line-height: 0.5; /*Distancia entre lineas de texto o entre contenedores: Acerca o aleja una linea de texto de la otra*/
 /*border-right: solid #55008e;*/
-padding-right: 5px solid #55008e;
+
 
 }
 
 .bloquedos, .bloquetres{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    --e-global-typography-accent-font-family: "Roboto";
-    background-color: #d8d3d3;
+    font-family:  "Roboto";
+    
     padding: 10px;
     display: flex;
     /*position: relative;*/
    /*align-content: center;*/
     align-items: center; /*Centra a nivel vertical*/
-    color: #333;
+    color: #1E1E21 ;
     width: 150px;
     height: 70px;
     flex-direction: column; /*Hace que el display flex sea en sentido vertical y no horizontal*/
     border-right: 20px;
-    border-right-color: #55008e;
+    border-right-color:  #1E1E21 ;
     line-height: 0.5; /*Distancia entre lineas de texto o entre contenedores: Acerca o aleja una linea de texto de la otra*/   
 }
 
 .bloquecuatro{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    --e-global-typography-accent-font-family: "Roboto";
-    background-color: #524040;
+    font-family: "Roboto";
+    background-color: #1E1E21 ;
     border-radius: 0px 12px 12px 0px; 
     padding: 10px;
     display: flex;
     /*position: relative;*/
     /*align-content: center;*/
     align-items: center; /*Centra a nivel vertical*/
-    color: rgb(196, 155, 240);
-    width: 150px;
+    color: #ffffff;
+    width: 200px;
     height: 70px;
     flex-direction: column; /*Hace que el display flex sea en sentido vertical y no horizontal*/
     line-height: 0.5; /*Distancia entre lineas de texto o entre contenedores: Acerca o aleja una linea de texto de la otra*/   
@@ -134,41 +133,48 @@ padding-right: 5px solid #55008e;
 }
 
 .textodiv{
-    width: 150px;
+    font-family: Poppins;
+    width: 200px;
     height: 35px;
     margin:0;
+    margin-top: 10PX;
     align-items: center; /*Centra a nivel vertical*/
     display: flex;
-    color: rgb(79, 9, 155);
+    color:  #1E1E21 ;
     font-size: 30px;
     justify-content: center; /*Centra a nivel horizontal*/
-    font-weight: 650;
+    font-weight: 700;
 }
 
 .textodiv1{
-    font-size: 13px;
+    font-family: 'Roboto';
+    font-size: 10px;
+    margin-top: 5px;
+   
     justify-content: center; /*Centra a nivel horizontal*/
     align-items: center; /*Centra a nivel vertical*/
 }
 
 h1{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    --e-global-typography-accent-font-family: "Roboto"; 
-    color: #48CFAD;
+    color:#BC2C2C;
+    font-family:'poppins';
+    font-weight: 800;
+
     justify-content: center; /*Centra a nivel horizontal*/
     align-items: center; /*Centra a nivel vertical*/
-    width:960px;
+    width:1200px;
     margin: auto;
+    margin-top:-100px;
     margin-bottom: 50px;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px; /*Altura entre lineas de texto*/
+    font-size: 60px;
+
     text-align: center; /*Alinea el texto hacia el centro*/
 }
 .parrafo{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    --e-global-typography-accent-font-family: "Roboto"; 
-    color: #121515;
+    font-family: 'Roboto';
+    font-size: 26px;
+    font-weight: 400;
+    color: #697279;
     justify-content: center; /*Centra a nivel horizontal*/
     align-items: center; /*Centra a nivel vertical*/
     width:900px;
@@ -189,39 +195,52 @@ h1{
 .vertical{
     width: 3px;
     height: 70px;
-    background-color:#6a53d5;
+    background-color:#BC2C2C;
     margin-top:10px;
+    margin-left: 4.5px;
 }
 
 /*Segunda Parte*/
 
 .cajon2{
 display: grid;
-display: flex;
-font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
---e-global-typography-accent-font-family: "Roboto";
-width: 100vw;
-justify-content: space-between;
+grid-template-columns: 1.5fr 1fr;
+text-align: start;
+margin-top: 60px;
+grid-column-gap: 150px;
 }
 
 .imagen{
-    width:500px;
+    width:300px;
     height: 500px;
     margin: auto;
+    margin-left: 150px;
     border-radius: 20px;
 }
 
-.textocajon2{
-    width:500px;
-    margin: auto;
-    margin-top:0px;
-    margin-left: 20px;
+.textocajon2 {
+    color:#BC2C2C;
+    font-family:'poppins';
+    font-size:40px; 
+    text-align:start;
+    display: flex;
+    margin-left:-15px;
+    margin-right: 40px;
+
+}
+
+.textocajon2 p{
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 400;
+  color: #697279;
+  margin-left: 380px;
+  margin-top: 130px;
 }
 
 h4{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    --e-global-typography-accent-font-family: "Roboto"; 
-    color: #48CFAD;
+    font-family:"Roboto"; 
+    color:#1E1E21 ;
     /*justify-content: flex-start; /*Ubica a izquierda*/
     align-items: center; /*Centra a nivel vertical*/
     width:500px;
@@ -241,11 +260,13 @@ h2{
     margin-top: 5px;
 }
 .parrafo2{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    --e-global-typography-accent-font-family: "Roboto"; 
-    width:500px;
-    font-size: 19px;
-    line-height: 28px; /*Altura o salto entre lineas de texto*/
+   font-family: 'Roboto';
+    font-size: 26px;
+    font-weight: 400;
+    color: #697279;
+    margin-left:-15px;
+    margin-right: 40px;
+
 }
 
 
