@@ -58,7 +58,8 @@ export default {}
 
 .banner__video {
   height: 447px;
-  margin-right: 50px;
+  margin-right: 100px;
+  margin-bottom: 100px;
 }
 
 .Descripción_Banner {

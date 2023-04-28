@@ -14,7 +14,7 @@
         <h3 style="font-weight: 900">COMPRADOR</h3>
         <h1 style="font-weight: 800">$69.900</h1>
         <h6>por mes</h6>
-        <button class="button-background1-left-column">Obtener ahora</button>
+        <router-link to="/Pasarela-Pago" class="button-background1-left-column">Obtener ahora</router-link>
       </div>
       <div class="right-column">
         <div style="display: flex">
@@ -29,7 +29,7 @@
       <div class="left-column-background1">
         <h3 style="font-weight: 600">VENDEDOR</h3>
         <h1 style="font-weight: 800; font-size: 26px">Inscripción Gratuita</h1>
-        <button class="button-background1-left-column">Obtener ahora</button>
+        <router-link to="/Pasarela-Pago" class="button-background1-left-column">Obtener ahora</router-link>
       </div>
 
       <div class="right-column">

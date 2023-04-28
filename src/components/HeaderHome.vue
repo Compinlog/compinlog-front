@@ -9,7 +9,7 @@
         <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Home">Home</button></router-link></li>
         <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Servicios">Membresías</button></router-link></li>
         <li><router-link class="navbar__link" to="/comprador"><button class= "botonmenu" id="B_Membresias" >Comprador</button></router-link></li>
-        <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Blog" >Vendedor</button></router-link></li>
+        <li><router-link class="navbar__link" to="/vendedor"><button class= "botonmenu" id="B_Blog" >Vendedor</button></router-link></li>
         <li><router-link class="navbar__link" to="/login"><button class= "botonmenu" id="B_Login" style="background-color: #BC2C2C ; color:white;" >Login</button></router-link></li>
       </ul>
     </nav>

@@ -30,7 +30,7 @@
                 text-transform: uppercase;
               "
             >
-              <p class="card_details_nombre">Nombre Tarjeta</p>
+              <p class="card_details_nombre">{{this.nameUserCard}}</p>
               <p><span class="card_mes">00</span><span>/</span><span class="card_año">00</span></p>
             </div>
           </div>
@@ -38,22 +38,23 @@
           <div class="card-back">
             <p
               class="card-back_code"
-              style="font-size: 0.7rem; margin-top: 50px; text-align: right; padding-right: 10px"
+              style="font-size: 0.7rem; margin-top: 64px; text-align: right; padding-right: 15px"
             >
-              000
+              {{this.numberCardAccept}}
             </p>
           </div>
         </section>
 
         <section class="main-container_form">
-          <form class="form" action="">
-            <label class="form_label" for="cardnombre">Nombre Propietario</label>
+          <form class="form" action="" @submit.prevent="cardTarget">
+            <label class="form_label" for="cardnombre">Nombre propietario</label>
             <input
               class="form_input"
               type="text"
               Nombre="cardnombre"
               id="cardnombre"
               placeholder="Nombre Propietario"
+              v-model="nameUserCard"
             />
             <div class="form_cardholder_error error"></div>
 
@@ -97,6 +98,7 @@
                 maxlength="3"
                 Nombre="cardCvc"
                 id="cardCvc"
+                v-model="numberCardAccept"
                 placeholder="000"
               />
 
@@ -117,7 +119,18 @@
 
 <script>
 export default {
-  name: 'Pasarela-Pago'
+  name: 'Pasarela-Pago',
+  data(){
+    return {
+      nameUserCard: '',
+      numberCardAccept:''
+    }
+  },
+  methods:{
+    cardTarget(){
+      console.log('Targeta obtenida')
+    }
+  }
 }
 
 //CARDHOLDER NOMBRE
@@ -282,6 +295,7 @@ if (botonConfirm) {
     }
   })
 }
+
 </script>
 
 <style scoped>

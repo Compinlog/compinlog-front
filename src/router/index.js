@@ -30,6 +30,11 @@ const router = createRouter({
           component: () => import(/* webpackChunkName: "about" */ '../components/Login.vue')
         },
         {
+          path: '/vendedor',
+          name: 'LandingVendedor',
+          component: () => import(/* webpackChunkName: "about" */ '../components/LandingVendedor.vue')
+        },
+        {
           path: '/Pasarela-Pago',
           name: 'Pasarela-Pago',
           component: () => import(/* webpackChunkName: "about" */ '../components/PasarelaPago.vue')
