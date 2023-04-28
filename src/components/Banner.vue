@@ -9,7 +9,7 @@
       </p>
 
       <div class="botones_banner">
-        <a href="#" class="banner__Registrarse">Regístrarse</a>
+        <router-link to="/register" class="banner__Registrarse">Regístrarse</router-link>
         <a href="#" class="banner__Contact">Contáctanos</a>
       </div>
     </div>
