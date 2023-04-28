@@ -10,11 +10,11 @@
     </div>
     <div>
       <div class="container__router">
-        <router-link @click="changeName('Home')" class="side-menu__link" :class="{'side-menu__link--active': open == true }" to="/MiServicios">
+        <router-link @click="changeName('Home')" class="side-menu__link" :class="{'side-menu__link--active': open == true }" :to="{ name: 'InicioComprador'}" >
           <img style="width: 25px; margin-left:-0.8rem;" src="@/assets/icons/iconHouse.svg" alt="">
           <span class="side-menu__text" :class="{'side-menu__text--active': open == true }">Home</span>
         </router-link>
-        <router-link @click="changeName('Service')" class="side-menu__link" :class="{'side-menu__link--active': open == true }" :to="{ name: 'InicioComprador'}">
+        <router-link @click="changeName('Service')" class="side-menu__link" :class="{'side-menu__link--active': open == true }" to="/MiServicios">
           <img style="width: 25px; margin-left:-0.8rem;" src="@/assets/icons/iconTray.svg" alt="">
           <span class="side-menu__text" :class="{'side-menu__text--active': open == true }">Mis servicios</span>
         </router-link>

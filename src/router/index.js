@@ -44,12 +44,12 @@ const router = createRouter({
         {
           path: '',
           name: 'InicioComprador',
-          component: () => import(/* webpackChunkName: "about" */ '../components/InicioCompradorV2.vue')
+          component: () => import(/* webpackChunkName: "about" */ '../components/ServiciosComprador.vue')
         },
         {
           path: '/MiServicios',
           name: 'MiServicios',
-          component: () => import(/* webpackChunkName: "about" */ '../components/ServiciosComprador.vue')
+          component: () => import(/* webpackChunkName: "about" */ '../components/InicioCompradorV2.vue')
         },
         {
           path: '/RegistrarServicios',

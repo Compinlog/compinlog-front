@@ -4,7 +4,19 @@
   <div class="container">
     <div class="container__card">
       <p>Purchase Order #a12313123</p>
-      <div class="card"></div>
+      <div class="card">
+        <div>
+            <div>ESTADO:</div>
+            <button class="pendiente">Pendiente</button>
+        </div>
+        <div>FECHA DE CREACIÓN:<br><span>27/04/2023</span></div>
+        <div>CANTIDAD DE PEDIDO:<br><span>1</span></div>
+        <div>SOLICITANTE:<br><span>Compinlog.inf@gmail.com</span></div>
+        <div>DIRECCIÓN:<br><span>Usaquen Cra 9 57 21</span></div>
+        <div><img src="../assets/img/firma.png"><br><span>AUTORIZA</span></div>
+        <div>SUBTOTAL:<br><span>$180.000.000 COP</span></div>
+        <div>TOTAL:<br><span>$230.000.000 COP</span></div>
+      </div>
     </div>
     <div class="container__buttons">
       <div class="box3R1">
@@ -50,9 +62,17 @@
   z-index: 5;
 }
 .card {
-  width: 100%;
+  width: 95%;
   height: 80%;
-  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+  background-color: #F8F8FA;
+  border-radius: 10px;
+}
+
+.card span {
+  font-size: 16px;
 }
 .container__buttons {
   background-color: rgb(255, 255, 255);
