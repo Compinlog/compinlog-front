@@ -14,17 +14,14 @@
           <p> Login</p>
           
          
-          <form class="form-style">
-            
-            
+          <form class="form-style" @submit.prevent="handleSubmit">
             <div>
-              
-              <label for="">Email</label>
-              <input class="input-form-login" type="text" style="width: 100%" placeholder="Email"/>
+             <label for="">Email</label>
+              <input v-model="email" class="input-form-login" type="text" style="width: 100%" placeholder="Email"/>
             </div>
             <div>
               <label for="">Password</label>
-              <input class="input-form-login" type="text" style="width: 100%" placeholder="Password"/>
+              <input  v-model="password" class="input-form-login" type="text" style="width: 100%" placeholder="Password"/>
             </div>
             <input class="button-send-form" type="submit" value="SIGN IN" />
           </form>
@@ -33,10 +30,39 @@
           <router-link to="/register">Regístrate</router-link>
         </div>
         </div>
-        
       </div>
-    
-  </template>
+</template>
+
+<script>
+
+export default {
+  name: 'Register-view',
+
+  data() {
+    return {
+        email: '',
+        password: '',
+    }
+  },
+  
+  methods: {
+    async handleSubmit(){
+      try {
+        await this.$store.dispatch('login', {
+          email: this.email,
+          password: this.password
+        })
+        this.$router.push('/Application')
+        // this.$router.push('userState')
+      }
+      catch (err) {
+        console.log(err)
+      }
+    }
+  },
+}
+</script>
+  
   
   <style scoped>
     

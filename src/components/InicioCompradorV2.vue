@@ -1,198 +1,129 @@
 
 
 <template>
-    <div class="container">
-        
-            <div class="box">
-                
-
-                <div class="box2">
-                    <p style="Color:#BC2C2C">Orden de compra</p>
-                    <div class="card">
-                        <div class="cardBoxL">
-
-                        </div>
-                        <div class="cardBoxR">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="box3">
-                        <div class="box3R">
-                            <div class="box3R1">
-                                <button class="btnL"><strong>Aprobar</strong></button>
-                                <button class="btnR"><strong>Rechazar</strong></button>
-                            </div>
-                                <button class="btn"><strong>Revisar</strong></button>
-                            
-        
-                            <div class="box3R2">
-                                <button><strong>Editar orden</strong></button>
-                            </div>
-                            <div class="box3R2">
-                                <button><strong>Historial de ordenes</strong></button>
-                            </div>
-                            
-                            <div class="box3R2" >
-                                <button ><strong >Adicionar nota</strong></button>
-                            </div>
-                        </div>
-                </div>
-            </div>  
-         
+  <div class="container">
+    <div class="container__card">
+      <p>Purchase Order #a12313123</p>
+      <div class="card">
+        <div>
+            <div>ESTADO:</div>
+            <button class="pendiente">Pendiente</button>
+        </div>
+        <div>FECHA DE CREACIÓN:<br><span>27/04/2023</span></div>
+        <div>CANTIDAD DE PEDIDO:<br><span>1</span></div>
+        <div>SOLICITANTE:<br><span>Compinlog.inf@gmail.com</span></div>
+        <div>DIRECCIÓN:<br><span>Usaquen Cra 9 57 21</span></div>
+        <div><img src="../assets/img/firma.png"><br><span>AUTORIZA</span></div>
+        <div>SUBTOTAL:<br><span>$180.000.000 COP</span></div>
+        <div>TOTAL:<br><span>$230.000.000 COP</span></div>
+      </div>
     </div>
+    <div class="container__buttons">
+      <div class="box3R1">
+        <button class="btnL"><strong>APPROVE</strong></button>
+        <button class="btnR"><strong>REJECT</strong></button>
+      </div>
+      <button class="btn"><strong>REVISE</strong></button>
+      <button class="btn__two"><strong>REPEAT</strong></button>
+      <button class="btn__two"><strong>REVISION HISTORY</strong></button>
+      <button class="btn__two"><strong>EDIT PURCHASE ORDER</strong></button>
+      <button class="btn__two"><strong>DOCUMENTS</strong></button>
+      <button class="btn__two btn__two--add">ADD DOCUMENTS</button>
+    </div>
+  </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    background-color: #F8F8FA;
-    padding: 100px;
-    
 
-}
-.b {
-    width: 100%;
-    height: 8%;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-radius: 20px 20px 0 0;
-    margin-top: 2%;
-    color: gray;
-    
-}
-.b p{
-    margin-left: 15px;
+.container {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 60% 25%;
+  width: 85%;
+  padding: 2rem 1rem 2rem 8rem;
+  background-color: white;
 }
 
-
-
-.box{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1500px;
-    height: 700px;
-    border-radius: 2px;
-    overflow: hidden;
-    box-shadow: 0px 10px 10px 4px rgba(0, 0, 0, 0.3);
-    cursor: default;
-    background-color:#BC2C2C;
-    font-family: 'Poppins'
-    }
-
-
-.box2{
-    width: 1000px;
-    height: 700px; 
-    }
-
-.box3{
-    padding: 10%;
-    margin-top: 100px;
-}
-
-.box3R{
-    width: 100%;
-    height: 100%;
-}
-
-.box3R1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 30%;
-    width: 100%;
-    height: 8%;;
-}
-
-.btnL{
-    border-radius: 15px;
-    background-color: #F8F8FA ;
-    color: #1E1E21;
-    border: none;
-    margin-right:5px
-}
-.btnR{
-    border-radius: 15px;
-    
-    background-color:#1E1E21;
-    color: #F8F8FA ;
-    border: none;
-}
-.box3R2{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 1%;
-    width: 100%;
-    height: 8%;
-}
-.box3R2 button{
-    border-radius: 15px;
-    border-color:none;
-    background-color: #C0C0C2 ;
-    color:#1E1E21;
-}
-
-.btn{
-    width: 100%;
-    height: 8%;
-    border-radius:15px;
-    border-color:none;
-    color:#1E1E21;
-    background-color: #C0C0C2    ;
-    margin-top: 1%;
+.container__card {
+  border-radius: 12px;
+  box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.288);   
+  padding: 1rem;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 140%;
+  font-family: 'Poppins';
+  font-size: 24px;
+  color: gray;
+  margin-top: -5rem;
+  z-index: 5;
 }
 .card {
-    margin-left: 15px;
-    width: 900px;
-    height: 530px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 10px 10px 4px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  width: 95%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+  background-color: #F8F8FA;
+  border-radius: 10px;
 }
-.cardBoxL{
+
+.card span {
+  font-size: 16px;
+}
+.container__buttons {
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.288);   
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: 140%;
+  margin-top: -5rem;
+  z-index: 5;
+}
+
+.box3R1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 2rem;
+}
+
+.btnL {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: rgb(104, 241, 104);
+  color: white;
+  border: none;
+}
+
+.btnR {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgb(250, 62, 62);
+  color: white;
+  border: none;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  border-style: none;
+  border-color: rgb(44, 37, 37);
+  &__two {
+    height: 40px;
+    border-radius: 4px;
     width: 100%;
-    height: 100%;
-    background-color: rgb(215, 245, 245);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-.cardBoxR   {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(232, 215, 247);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.box img {
-    width: 130px;
-    height: 115px;
-    left: 99px;
-    top: 28px;
-    padding: 30px;
-}
-
-.box h1{
-    font-family: 'Anybody', cursive;
-    text-align: center;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 24px;
-}
-
-.box2 p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    padding: 10px;
-    color: gray;
+    border-style: none;
+    &--add {
+      background-color: rgba(81, 119, 243, 0.938);
+      color: white;
+    }
+  }
 }
 </style>

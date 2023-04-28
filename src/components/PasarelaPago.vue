@@ -116,7 +116,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Pasarela-Pago'
+}
 
 //CARDHOLDER NOMBRE
 
@@ -302,7 +304,6 @@ if (botonConfirm) {
 }
 
 .main-container_background {
-  background-image:url("./images/bg-main-desktop.png");
   height: 255px;
 }
 
@@ -315,7 +316,7 @@ if (botonConfirm) {
   height: 180px;
   color: white;
   padding: 20px;
-  background-image: url("../assets/img/bg-card-front.png");
+  background-image: url('../assets/img/bg-card-front.png');
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -330,7 +331,7 @@ if (botonConfirm) {
   height: 160px;
   color: white;
   padding: 20px;
-  background-image: url("../assets/img/bg-card-back.png");
+  background-image: url('../assets/img/bg-card-back.png');
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;

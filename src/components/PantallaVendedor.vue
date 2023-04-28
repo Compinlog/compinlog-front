@@ -7,7 +7,6 @@
             <div>ESTADO:</div>
             <button class="pendiente">Pendiente</button>
         </div>
-
         <div>FECHA DE CREACIÓN:<br>27/04/2023</div>
         <div>CANTIDAD DE PEDIDO:<br>1</div>
         <div>SOLICITANTE:<br>Compinlog.inf@gmail.com</div>
@@ -15,29 +14,19 @@
         <div><img src="../assets/img/firma.png"><br>AUTORIZA</div>
         <div>SUBTOTAL:<br>$180.000.000 COP</div>
         <div>TOTAL:<br>$230.000.000 COP</div>
-        
-   
     </div>
-
     <div class="button-order">
     <div>
         <button style="  background-color:#42A345;color:#ffff;margin:7px; border: none;" class="new-order">APROBAR</button>
     </div>
-
     <div>
         <button style="background-color:#CA4720;color:#ffff;margin:7px; border: none;" class="new-order">MODIFICAR</button>
     </div>
-
     <div>
         <button style="background-color:#697279; color:#ffff;margin:7px; border: none;" class="new-order">RECHAZAR</button>
     </div>
-
     </div>
-
-    
-
-
-  </div>
+</div>
 
 </template>
 
