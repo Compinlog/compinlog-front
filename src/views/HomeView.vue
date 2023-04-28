@@ -21,7 +21,7 @@ import Footer from '@/components/Footer.vue'
 <template>
     <div>
         <HeaderHome/>
-        <router-view/>
+        <router-view style="margin-bottom: 6rem;"/>
         <Footer/>
     </div>
 </template>

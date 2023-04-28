@@ -23,9 +23,9 @@
 export default {}
 </script>
     
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap');
+<style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap');
 
 .Banner {
   padding: 0 94px;
@@ -110,7 +110,7 @@ export default {}
   color: #FFFFFF;
   padding: 10px 30px;
   border-radius: 5px;
-  font-family: 'Roboto';;
+  font-family: 'Roboto';
   margin-right: 10px;
   font-size: 16px;
   text-decoration: none;

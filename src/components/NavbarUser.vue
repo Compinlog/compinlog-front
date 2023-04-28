@@ -2,7 +2,7 @@
   <div class="container">
     
     <div style="display: flex;">
-      <div class="container__name">{{this.$store.state.user}}</div>
+      <div class="container__name"></div>
       <button class="container__button" @click="singout">Cerrar sesion</button>
     </div>
   </div>

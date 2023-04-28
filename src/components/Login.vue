@@ -1,6 +1,5 @@
 
 <template>
-    
       <div class="container-login">
         <div class="container-login-inf">
           <img style="justify-content: center; margin-left:45px;margin-top:90px ;" src="../assets/img/logob.png" alt="" >
@@ -21,7 +20,7 @@
             </div>
             <div>
               <label for="">Password</label>
-              <input  v-model="password" class="input-form-login" type="text" style="width: 100%" placeholder="Password"/>
+              <input  v-model="password" class="input-form-login" type="password" style="width: 100%" placeholder="Password"/>
             </div>
             <input class="button-send-form" type="submit" value="SIGN IN" />
           </form>
@@ -71,7 +70,6 @@ export default {
     padding: 0;
     box-sizing: border-box;
     border-radius: 10px;
-    
   }
   .container-login {
     display: flex;
@@ -80,15 +78,10 @@ export default {
     box-shadow: 0 0 20px rgb(133, 132, 132);
     margin: auto;
     margin-top: 130px;
-    
-    
-     
+    margin-bottom: 6rem;
   }
- 
-
   .container-login-inf{
     background-image:url(../assets/img/3.png) ;
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,31 +90,27 @@ export default {
     height: 100%;
     margin-bottom: 100px;
   }
-
-   .container-login-inf p{
+  .container-login-inf p{
     font-family: poppins;
     color: #FFFFFF;
     margin-top: 18px;
     justify-content: center;
     text-align: center;
-
-   }
- 
+  }
   .text-prod {
     color: rgb(223, 223, 223);
     font-size: 6rem;
     font-family: 'Roboto';
   }
-  
-   .container-login-form {
+  .container-login-form {
     display: grid;
     background: white;
     padding: 5rem;
     text-align: center;
     margin:0px 0px ;
+    margin-bottom: 4rem;
     
   }
-
   .container-login-form p{
     font-family: Roboto;
     font-weight: 800;
@@ -129,12 +118,9 @@ export default {
     color: #BC2C2C;
     margin-top:-20px; 
     margin-left:2.5px;
-
   }
-  
   .form-style {
     display: grid;
-    
     gap: 2rem;
     text-align: start;
     margin-top: 4rem;
@@ -164,7 +150,4 @@ export default {
     margin-top: 4rem;
     font-family: sans-serif;
   }
-
-  
- 
-  </style>
+</style>

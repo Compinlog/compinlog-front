@@ -1,14 +1,5 @@
 !<template>
   <div class="pasarela-container">
-    <div class="logo-compinlog">
-      <img
-        class="imagen"
-        style="padding: 10px; width: 90%; margin: 15px 15px"
-        src="@/assets/logo.svg"
-        alt="Imagen"
-      />
-    </div>
-
     <main class="main-container">
       <div class="container-pay-card">
         <section class="main-container_background">
@@ -301,7 +292,11 @@ if (botonConfirm) {
 <style scoped>
 .pasarela-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 4rem;
+  grid-template-columns: 1fr;
+  background-image: url('../assets/background-register.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-container {

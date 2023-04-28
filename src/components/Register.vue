@@ -4,9 +4,10 @@
     <section class="container-login">
       <div class="container-login-form">
         <div class="container">
-          <form v-on:submit.prevent @submit="saveData">
-            <img class="Icon" src="../assets/Icono-Compinlog.svg" alt="Icono" />
-
+          <form v-on:submit.prevent @submit="saveData" class="container__form">
+            <div style="display: flex; margin-left: 2rem; margin-bottom: 2rem;">
+              <span class="register__tittle">Registro</span>
+            </div>
             <label for="Nombre">Nombre de la Empresa:</label>
             <input v-model="user.name" type="text" id="Nombre" name="Nombre" /><br />
 
@@ -87,7 +88,7 @@
 
             <div class="check-terms">
               <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" />
-              <label for="terminos_condiciones">He leído y acepto los términos y condiciones</label
+              <label for="terminos_condiciones" style="margin-top: 0.8rem;">He leído y acepto los términos y condiciones</label
               ><br />
             </div>
             <input type="submit" value="Crear Cuenta" />
@@ -179,19 +180,22 @@ export default {
 </script>
   
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap');
 .container-login {
-  display: flex;
-  margin: 2rem auto;
-  width: 700px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 500px;
+  padding: 4rem;
 }
 
 .image-principal {
-  background-image: url('../assets/image-login.svg');
+  background-image: url('../assets/background-register.jpeg');
   background-size: cover;
+  height: 100%;
 }
 .registroDiv {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   margin: auto;
   justify-content: center;
   padding: 0 2rem;
@@ -210,28 +214,33 @@ export default {
   background: white;
   padding: 2rem;
   text-align: center;
-  margin-right: 8rem;
   border-radius: 20px;
-}
-
-.izquierda {
-  background-color: #ffffff;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  border-radius: 3px;
 }
 
 .Icon {
   display: flex;
-  width: 400px;
-  height: 85px;
-  margin: 5rem auto;
+  width: 80px;
+  height: 80px;
+}
+
+.register__tittle {
+  font-family: 'Roboto';
+  color: #BC2C2C;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0.5rem auto;
 }
 
 .container form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+.container__form label input{
+  margin: 0 auto;
+}
+
 
 .container-login-img {
   background: white;
@@ -260,7 +269,7 @@ export default {
 label {
   display: block;
   margin-left: 12px;
-  font-weight: bold;
+  margin-bottom: 0.7rem;
   color: black;
   font-family: 'Poppins';
   text-align: left;
@@ -268,7 +277,6 @@ label {
 
 .label-select {
   color: gray;
-  font-weight: bold;
   font-family: 'Poppins';
   text-align: center;
   font-size: 16px;
@@ -289,7 +297,7 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover {
-  background-color: #3e8e41;
+  background-color: #BC2C2C;
 }
 
 input[type='text'],
@@ -299,19 +307,18 @@ select {
   padding: 10px;
   margin-bottom: 5px;
   margin-left: 10px;
-  width: 90%;
+  width: 95%;
   border: 2px solid #ccc;
   border-radius: 12px;
   box-sizing: border-box;
   display: block;
-  font-weight: bold;
   align-items: center;
   font-family: 'Poppins';
 }
 
 .file-select input[type='file'] {
   opacity: 0;
-  width: 100%;
+  width: 90%;
   display: inline-block;
 }
 
@@ -328,7 +335,7 @@ select {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s;
   height: 40px;
-  width: 90%;
+  width: 95%;
 }
 
 .check-terms {

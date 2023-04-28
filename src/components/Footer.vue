@@ -1,6 +1,6 @@
 
 <template>
-  <div style="margin-top: 90px;">
+  <div style="margin:0; padding:0;">
     <footer class="footer">
       <div class="container-text-footer">
         <div class="divCenter">
@@ -63,7 +63,7 @@
 
 <style scoped>
 .footer {
-  background: #1E1E21 ;
+  background: #1E1E21;
   height: 40%;
   padding: 56px;
 }
@@ -103,6 +103,7 @@ hr {
 .social {
   color: white;
   margin-right: 15px;
+  font-family: 'Roboto';
 }
 
 .nameColum {
