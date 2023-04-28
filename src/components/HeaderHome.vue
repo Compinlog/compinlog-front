@@ -1,19 +1,30 @@
+
 <template>
   <header>
     <div class="logo">
-      <img src="../assets/Logo-Compinlog.svg" alt="Compinlog" />
-    </div>
-    <nav>
+      <img src="../assets/logo.svg" alt="Compinlog" >
+      </div>
+      <nav>
       <ul class="MenuSuperior">
-        <li><router-link class="navbar__link" to="/"><button id="B_Home">Home</button></router-link></li>
-        <li><router-link class="navbar__link" to="/"><button id="B_Servicios">Membresías</button></router-link></li>
-        <li><router-link class="navbar__link" to="/comprador"><button id="B_Membresias">Comprador</button></router-link></li>
-        <li><router-link class="navbar__link" to="/"><button id="B_Blog">Vendedor</button></router-link></li>
-        <li><router-link class="navbar__link" to="/login"><button id="B_Login" style="background-color: #48cfad; color:white;">Login</button></router-link></li>
+        <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Home">Home</button></router-link></li>
+        <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Servicios">Membresías</button></router-link></li>
+        <li><router-link class="navbar__link" to="/comprador"><button class= "botonmenu" id="B_Membresias" >Comprador</button></router-link></li>
+        <li><router-link class="navbar__link" to="/"><button class= "botonmenu" id="B_Blog" >Vendedor</button></router-link></li>
+        <li><router-link class="navbar__link" to="/login"><button class= "botonmenu" id="B_Login" style="background-color: #48cfad; color:white;" >Login</button></router-link></li>
       </ul>
     </nav>
   </header>
 </template>
+
+<script>
+
+//export default {
+//  name: 'Header',
+//  props: {
+//    msg: String
+//  }
+//}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -30,11 +41,6 @@ header {
   background-color: #f0f0f0;
   justify-content: space-between;
 }
-
-/*nav{
-align-items: center;
-display: flex;
-}*/
 
 .logo {
   /*Contenedor que guarda el logo*/
@@ -90,6 +96,18 @@ button {
   /*Estilos para un ID especial*/
   border: 1px solid #48cfad;
 }
+.botonmenu:hover{
+  color: white;
+  border: 1px solid #373737;
+  background-color: #92928d;
+}
+
+.botonmenu:focus{ /*Cambiar el color del boton cuando uno le da click sobre él */
+  color: white;
+  border: 1px solid #6e6969;
+  background-color: #ad1c1c;
+}
+
 
 h3 {
   margin: 40px 0 0;
@@ -102,7 +120,10 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-</style>
+/*a {
+  color: #42b983;
+}*/
 
+</style>
 
 

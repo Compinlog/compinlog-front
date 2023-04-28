@@ -1,9 +1,7 @@
 <script>
-import Cards from '../components/Cards.vue'
-import Banner from '../components/Banner.vue'
-import BlogHome from '../components/BlogHome.vue'
-import Membresia from '../components/Membresia.vue'
-import Inicio2 from '../components/InicioCompradorV2.vue'
+
+import HeaderHome from '@/components/HeaderHome.vue'
+import Footer from '@/components/Footer.vue'
 
     export default {
     name: "Home-view", // Nombre del componente
@@ -11,24 +9,18 @@ import Inicio2 from '../components/InicioCompradorV2.vue'
     // definición de variables y banderas
     return {};
     },
-    // estados o propiedades
+
     components: {
-        Inicio2,
-        Banner,
-        Cards,
-        BlogHome,
-        Membresia,
-        
+        HeaderHome,
+        Footer,
     }
 };
 </script>
 
 <template>
     <div>
-        <Inicio2/>
-        <Banner/>
-        <Cards/>
-        <BlogHome/>
-        <Membresia/>
+        <HeaderHome/>
+        <router-view/>
+        <Footer/>
     </div>
 </template>

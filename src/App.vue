@@ -1,23 +1,14 @@
 
 <template>
   <div>
-    <HeaderHome/>
-    <PasarelaPago/>
-    <Footer/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HeaderHome from '@/components/HeaderHome.vue'
-import Footer from '@/components/Footer.vue'
-import PasarelaPago from '@/components/PasarelaPago.vue'
-// import PasarelaPago from './components/PasarelaPago.vue';
 
 export default {
-  components: {
-    HeaderHome,
-    Footer,
-    PasarelaPago,
+  methods: {
   }
 }
 </script>

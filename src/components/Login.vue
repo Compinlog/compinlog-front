@@ -1,3 +1,4 @@
+
 <template>
     
       <div class="container-login">
@@ -30,9 +31,6 @@
 </template>
 
 <script>
-// import { ref } from 'vue'
-// import { useStore } from 'vuex'
-// import { useRouter } from 'vue-router'
 
 export default {
   name: 'Register-view',
@@ -51,35 +49,14 @@ export default {
           email: this.email,
           password: this.password
         })
-        // this.$router.push('/')
+        this.$router.push('/Application')
+        // this.$router.push('userState')
       }
       catch (err) {
         console.log(err)
       }
     }
   },
-  // setup() {
-  //   const email = ref('')
-  //   const password = ref('')
-  //   const error = ref(null)
-
-  //   const store = useStore()
-  //   const router = useRouter()
-
-  //   const handleSubmit = async () => {
-  //     try {
-  //       await store.dispatch('login', {
-  //         email: this.email,
-  //         password: this.password
-  //       })
-  //       this.$router.push('/')
-  //     }
-  //     catch (err) {
-  //       console.log(err)
-  //     }
-  //   }
-  //   return { handleSubmit, email, password, error }
-  // }
 }
 </script>
   

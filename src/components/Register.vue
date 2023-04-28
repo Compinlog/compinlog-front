@@ -1,3 +1,4 @@
+
 <template>
   <div class="image-principal">
     <section class="container-login">

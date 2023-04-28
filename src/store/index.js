@@ -19,6 +19,10 @@ const store = createStore({
         }
     },
     actions: {
+       
+        detectarUsuario({commit}, user){
+            commit('setUser', user)
+        },
         async register(context, { email, password }){
             const response = await createUserWithEmailAndPassword(auth, email, password)
             if (response) {
@@ -39,10 +43,18 @@ const store = createStore({
 
         async logout(context){
             await signOut(auth)
-
             context.commit('setUser', null)
         }
-    }
+    },
+    getters:{
+        existeUsuario(state){
+            if(state.user === null){
+                return false
+            }else{
+                return true
+            }
+        }
+    },
 })
 
 // export the store
