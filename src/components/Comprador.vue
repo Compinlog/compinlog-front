@@ -1,23 +1,24 @@
 <template>
   <div class="container-comprador">
     <section style="display: grid; gap: 1rem">
-      <h1 class="tittle-comprador">
-        Crea y gestiona todas tus órdenes de compra en el mismo lugar
+      <h1 class="tittle-comprador" >
+        Crea y gestiona todas tus órdenes de compra <span style="color:#BC2C2C"> en un solo lugar. </span>
       </h1>
-      <h3>
+      <p class="text-tree" style="margin-top:15px" >
         Ahorra tiempo, presupuesto y esfuerzo al gestionar tu departamento de compras desde un solo
-        lugar. Nuestra plataforma te ofrece la mejor manera para hacerlo: más rápido, sencillo y
-        eficaz. ¡Diseñado para tu éxito!
-      </h3>
-      <button class="button-comprador">Descubre Compinlog</button>
+        lugar. 
+        <br> Nuestra plataforma te ofrece la mejor manera para hacerlo: más rápido, sencillo y
+        eficaz. <br> ¡Diseñado para tu éxito!
+      </p>
+      <button class="button-comprador">DESCUBRE COMPINLOG</button>
     </section>
-    <section>
-      <h4>TODO EL PROCESO EN UN SOLO LUGAR</h4>
-      <h1 class="tittle-comprador">Compras más rápidas</h1>
-      <h3>
+    <section style="background-color: #1E1E21; margin: 100px 0px  auto; padding: 10px 0px 0px 10px ">
+      
+      <h1 class="tittle-comprador" style="color:#FFFFFF">Compras más rápidas</h1>
+      <p class="text-tree " style="padding: 10px 10px 0px 10px; color:#FFFFFF ">
         Automatiza y estandariza tu flujo de creación de solicitudes de cotización y nosotros las
         distribuimos a los mejores proveedores.
-      </h3>
+      </p>
       <div>
         <nav>
           <ul class="MenuSuperior">
@@ -33,19 +34,19 @@
     </section>
     <section class="section-comprador-tree">
       <div>
-        <h3 style="color: #8b53d5">IMPACTO</h3>
-        <h1>¡Más que clientes, tenemos aliados estratégicos!</h1>
+        <h3 style="color:#697279"> IMPACTO</h3>
+        <h1 style="color:#1E1E21; font-family:popins; font-weigth:900; font-size:40px">¡Más que clientes,<span style="color:#BC2C2C; font-family:popins; font-weigth:900; font-size:40px; margin-top:0px" > tenemos aliados estratégicos!</span></h1>
+        <p>En Compinlog, no solo tenemos clientes, sino que contamos con aliados que nos acompañan en
+        nuestra misión de simplificar y revolucionar los procesos empresariales. Trabajamos juntos y nos comprometemos a ofrecer soluciones efectivas que aumenten la productividad y mejoren la experiencia en los departamentos de compra, inventario y logística. Nos enfocamos en hacer que el proceso sea ágil, eficiente y sencillo para todos los involucrados.<br><br>
+        <span style="color:#1E1E21">¡Únete a nosotros en este camino!</span></p>
       </div>
-      <div style="margin-top: 2rem" class="text-tree">
-        En Compinlog, no solo tenemos clientes, sino que contamos con aliados que nos acompañan en
-        el camino de simplificar y revolucionar el proceso de compras empresariales. Juntos, nos
-        comprometemos a ofrecer soluciones efectivas para aumentar la productividad y mejorar la
-        experiencia de compra. Hacemos que el proceso de compras sea ágil, eficiente y sencillo.
-        ¡Únete a nosotros en este camino!
+      <div style="margin-top: 4rem" class="text-tree">
+        <img src="@/assets/img/log.png" alt=""/>
+        
       </div>
     </section>
     <section>
-      <img src="@/assets/comprador-image.svg" alt="" />
+      
       <h1 class="tittle-comprador">Asegura la competitividad de tu operación</h1>
       <button class="button-comprador">
         <router-link class="navbar__link" to="/login">Empieza ahora</router-link>
@@ -55,16 +56,27 @@
 </template>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap');
+
 .container-comprador {
   display: grid;
-  gap: 10rem;
-  width: 60%;
-  margin: 200px auto;
+  gap: 7rem;
+  width: 90%;
+  margin: 100px auto;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Roboto';
+ background-color:#F8F8FA;
+ padding: 0 25px;
+  
 }
 .tittle-comprador {
-  font-size: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 60px;
+  font-weight: 800;
+  margin-top: 100px;
+  
 }
 .button-comprador {
   display: flex;
@@ -74,10 +86,10 @@
   align-items: center;
   height: 80px;
   font-size: 24px;
-  background: #48cfad;
+  background: #BC2C2C ;
   box-shadow: 9px 9px 10px rgba(114, 113, 255, 0.25);
   border-radius: 0.5rem;
-  border: #48cfad;
+  border: none;
 }
 ul {
   list-style-type: none;
@@ -94,33 +106,46 @@ li {
   position: relative;
   width: 120px;
   height: 45px;
-  color: #4a4a4a;
-  background-color: #f0f0f0;
+  color: #FFFFFF;
+  background-color: #BC2C2C;
   border-radius: 5px;
-  border: 1px solid #48cfad;
-  font-family: sans-serif;
-  font-size: 12px;
-  font-weight: bold; /*Grosor de letra*/
+  border: 1px solid  #BC2C2C;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: normal; /*Grosor de letra*/
   align-items: center;
   justify-content: center;
   /*box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3); /*La sombra que hay debajo de cada botón*/
   box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .section-comprador-tree {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.5fr 1fr;
   text-align: start;
+  margin-top: 60px;
+  grid-column-gap: 150px;
 }
 
+
 .text-tree {
-  font-size: 24px;
-  color: #6e6e6e;
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 400;
+  color: #697279;
 }
 .navbar__link {
   text-decoration: none;
   cursor: pointer;
   color: white;
+}
+.section-comprador-tree p{
+  font-family: "Roboto";
+  font-size: 24px;
+  color:#697279
+  
 }
 </style>

@@ -2,7 +2,7 @@
 <template>
   <div class="Banner">
     <div class="Descripción_Banner">
-      <h1 class="Banner_tittle" style="color: #8b53d5;">¡Todo lo que necesitas</h1><h1 class="Banner_tittle" style="margin-top:-2rem; color: #48cfad;">a un solo click de distancia!</h1>
+      <h1 class="Banner_tittle">¡Todo lo que necesitas</h1><h1 class="Banner_tittle" style="margin-top:-2rem; color: #BC2C2C;">a un solo click de distancia!</h1>
       <p class="Banner_text">
         Aportamos soluciones a tu empresa, contamos con un equipo de trabajo especializado y
         proveedores más competitivos del mercado.
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="banner__video">
-      <video style="width: 100%; height: 100%; border-radius: 30px" src="@/assets/video/banner-video.mp4" controls></video>
+      <video style="width: 120%; border-radius: 20px " src="@/assets/video/banner-video.mp4" controls></video>
     </div>
   </div>
 </template>
@@ -24,36 +24,41 @@ export default {}
 </script>
     
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap');
+
 .Banner {
   padding: 0 94px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #F8F8FA ;
   gap: 122px;
-  margin-top: 4rem;
+  margin-top: 90px;
 }
 .Banner_tittle {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 60px;
-  font-family: sans-serif;
+  font-family: 'Poppins';
   font-style: normal;
+  color:#1E1E21;
 }
 
 .Banner_text {
-  font-family: 'Poppins';
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 30px;
 
-  color:#697279;
+  color:#1E1E21 ;
 }
 
 .banner__video {
   height: 447px;
+  margin-right: 50px;
 }
 
 .Descripción_Banner {
@@ -61,6 +66,7 @@ export default {}
   font-size: 20px;
   line-height: 1.8;
   margin-bottom: 20px;
+  padding: 0px 20px 0px 0px;
 }
 
 .Descripción_Banner h2 {
@@ -79,16 +85,18 @@ export default {}
 }
 
 .banner__Registrarse {
-  background-color: #48cfad;
-  color: #fff;
-  padding: 10px 30px;
+  background-color: #BC2C2C ;
+  color: #FFFFFF  ;
+  padding: 10px 20px;
   border-radius: 5px;
+  
   margin-right: 30px;
+  margin-left: -50px;
   font-size: 16px;
   text-decoration: none;
   transition: background-color 0.3s ease;
   box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
-  font-family: sans-serif;
+  font-family:'Roboto';
 }
 
 .banner__Registrarse :hover {
@@ -96,11 +104,12 @@ export default {}
 }
 
 .banner__Contact {
-  border: #48cfad solid 1px;
-  color: black;
+  border:solid 1px;
+  background-color: #1E1E21 ;
+  color: #FFFFFF;
   padding: 10px 30px;
   border-radius: 5px;
-  font-family: sans-serif;
+  font-family: 'Roboto';;
   margin-right: 10px;
   font-size: 16px;
   text-decoration: none;

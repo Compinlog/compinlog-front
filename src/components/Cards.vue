@@ -4,15 +4,15 @@
     <div class="container">
       <div class="card">
         <center><img src="../assets/lista-de-deseos.png" /></center>
-        <h1><b style="font-weigth: 500; color: #8b53d5">COMPRAS</b><br /><br /></h1>
+        <h1><b>Compras</b><br /><br /></h1>
         <p>
-          Evaluamos ofertas con cuadros comparativos entre ellas.<br /><br />Negociamos precios y
+          Evaluamos ofertas con<br /> cuadros comparativos entre ellas.<br /><br />Negociamos precios y
           <br />marcas.
         </p>
       </div>
       <div class="card">
         <center><img src="../assets/logistica.png" /></center>
-        <h1><b style="font-weigth: 500; color: #8b53d5">INVENTARIO</b><br /><br /></h1>
+        <h1><b>Inventario</b><br /><br /></h1>
         <p>
           Sistema de control de <br />
           inventario de materiales o mercancía. <br />
@@ -21,7 +21,7 @@
       </div>
       <div class="card">
         <center><img src="../assets/envio-internacional.png" /></center>
-        <h1><b style="font: weigth 500px; color: #8b53d5">LOGISTICA</b><br /><br /></h1>
+        <h1><b >Logistica</b><br /><br /></h1>
         <p>
           Transporte y entrega de<br />
           productos. <br />
@@ -39,45 +39,49 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15%;
-  background: linear-gradient(rgba(93, 6, 206, 0.301) 70%, #3d028a 120.27%);
+  gap: 10%;
+  background: #BC2C2C ;
   padding: 100px;
-  margin: 0 auto;
-  border-radius: 50px;
+  border-radius: none;
 }
 
 .card {
-  width: 100%;
-  height: 493px;
+  width: 85%;
+  height: 450px;
   border-radius: 30px;
   overflow: hidden;
-  background: linear-gradient(rgba(44, 207, 166, 0.034) 70%, #48cfad 120.27%);
+  background-color: #F8F8FA  ;
   box-shadow: 0px 10px 10px 4px rgba(0, 0, 0, 0.3);
   cursor: default;
-  background-color: #ffffff;
+  padding: 10px;
+  
+  
 }
 
 .card img {
-  width: 115px;
-  height: 115px;
+  width: 100px;
+  height: 95px;
   left: 99px;
   top: 28px;
-  padding: 50px;
+  padding: 30px;
 }
 
 .card h1 {
-  font-family: 'Anybody', cursive;
+  font-family: 'Poppins'; 
+  font-style: normal;
   text-align: center;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 24px;
-  color: #204945;
+  color:#BC2C2C 
+  
 }
 
 .card p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto'; 
   text-align: center;
   font-size: 18px;
+  color:#697279;
 }
 </style>
 

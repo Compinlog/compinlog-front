@@ -27,7 +27,7 @@
         </div>
         <div>
           <p class="nameColumCompinlog">
-            <img src="@/assets/logoCompinlog.png" width="70px" height="70px" /><strong
+            <img src="" /><strong style="font-family: 'Roboto';margin-left:46px"
               >Compinlog</strong
             >
           </p>
@@ -63,7 +63,7 @@
 
 <style scoped>
 .footer {
-  background: linear-gradient( rgba(92, 6, 206, 0.651) 70%, #3d028a 120.27%);
+  background: #1E1E21 ;
   height: 40%;
   padding: 56px;
 }
@@ -89,7 +89,7 @@
 p {
   color: rgb(194, 194, 194);
   margin-left: 10%;
-  font-family: sans-serif;
+  font-family: 'Roboto';
 }
 
 hr {
@@ -118,8 +118,8 @@ margin: 0;
 }
 
 .btn {
-  background: #48cfad;
-  border: #48cfad;
+  background: #BC2C2C ;
+  border: #BC2C2C;
   color: white;
   border-radius: 8px;
   font-family: sans-serif;

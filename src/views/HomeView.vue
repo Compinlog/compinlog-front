@@ -4,6 +4,7 @@ import Banner from '../components/Banner.vue'
 import BlogHome from '../components/BlogHome.vue'
 import Membresia from '../components/Membresia.vue'
 
+
     export default {
     name: "Home-view", // Nombre del componente
     data() {
@@ -17,6 +18,7 @@ import Membresia from '../components/Membresia.vue'
         BlogHome,
         Membresia,
         
+        
     }
 };
 </script>
@@ -27,5 +29,6 @@ import Membresia from '../components/Membresia.vue'
         <Cards/>
         <BlogHome/>
         <Membresia/>
+        
     </div>
 </template>
